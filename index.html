@@ -1,0 +1,223 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <title>掌中英语首页</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="css/base.css" rel="stylesheet">
+  <link href="css/hover-min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href=" css/searchTeacher.css">
+</head>
+<body>
+  <!--[if lt IE 7]>
+  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+  <header>
+    <div class="customerServiceOnline"><a href="##">在线客服</a></div>
+    <div class="top baCo">
+      <div class="w1100 mCenter">
+        <div class="top_left"><a href="login.html" class="active loginBtn">请登录</a><a class="active hidden">小齐</a><a class="ml30 hidden">退出</a><a href="javascript:;" class="resBtn ml35">免费注册</a></div>
+        <div class="top_right"><a href="index.html" class="pr35"> 掌中英语首页</a><a href="usercenter.html" class="pr10 classBtn"> 我的课表</a>
+          <!--a(href="javascript:;").pl30  联系客服-->
+        </div>
+      </div>
+    </div>
+    <div class="headContent clearfix">
+      <div class="head_left"><img src="img/logo.gif" class="w50 pt25 fl">
+        <p class="pt40 website pa">zzenglish.net</p>
+        <h1 class="f24 title pa"><a href="index.html">掌中英语</a></h1>
+        <p class="city pa fb">广州</p>
+        <p class="changeCity pa">切换城市</p>
+      </div>
+      <!--头部搜索框-->
+      <div class="head_right h100 w820 fr">
+        <div class="head_search pr">
+          <form anction="search.jsp">
+            <input placeholder="搜索您感兴趣的老师" class="searchInput">
+            <button id="searchButton" type="submit" class="searchButton">搜索</button>
+          </form>
+        </div>
+      </div>
+      <!--内容区//顶部导航条
+      -->
+    </div>
+    <div class="w1100 mCenter">
+      <div class="findTeacher"><a class="findTeacherButton">找老师</a>
+        <ul class="classList none">
+          <li id="primarySchool" class="primarySchool pr"><a>小学</a>
+            <p class="pa listSpan"><span>小一、</span><span>小二、</span><span>小三、</span>
+            </p>
+          </li>
+          <li id="juniorMiddleSchool" class="juniorMiddleSchool pr"><a>初中</a>
+            <p class="pa listSpan"><span>初一、</span><span>初二、</span><span>初三、</span>
+            </p>
+          </li>
+          <li id="seniorHighSchool" class="seniorHighSchool pr"><a>高中</a>
+            <p class="pa listSpan"><span>高一、</span><span>高二、</span><span>高三、</span>
+            </p>
+          </li>
+          <li id="university" class="university pr"><a>大学</a>
+            <p class="pa listSpan"><span>四级、</span><span>六级、</span><span>考研、</span>
+            </p>
+          </li>
+          <li id="foreign" class="foreign pr"><a>出国留学</a>
+            <p class="pa listSpan"><span>托福、</span><span>雅思、</span><span>GRE、</span>
+            </p>
+          </li>
+          <li id="language" class="language pr"><a>语言培训</a>
+            <p class="pa listSpan"><span>零基础、</span><span>口语、</span><span>BEC、</span>
+            </p>
+          </li>
+          <!--隐藏的列表-->
+        </ul>
+        <div id="changeClass" class="changeClass pa none"><span><a>小一、</a></span><span><a>小二、</a></span><span><a>小三、</a></span><span><a>小四、</a></span><span><a>小五、</a></span><span><a>小六、</a></span>
+        </div>
+      </div>
+      <div class="nav_bar">
+        <ul class="nav_list bgW">
+          <li><a href="index.html" class="bgW f14 w85 ib tc cBlack">首页</a></li>
+          <li><a href="knowaboutcommunity.html" class="bgW f14 w85 ib tc cBlack">了解社区</a></li>
+          <li><a href="teacherJoinUs.html" class="bgW f14 w85 ib tc cBlack">老师入驻</a></li>
+          <li><a href="appdownload.html" class="bgW f14 w85 ib tc cBlack">下载app</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <!--轮播图-->
+    <div id="slidershow" class="container-fluid carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#slidershow" data-slide-to="0" class="active"></li>
+        <li data-target="#slidershow" data-slide-to="1"></li>
+        <li data-target="#slidershow" data-slide-to="2"></li>
+        <li data-target="#slidershow" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active"><a href="##"><img src="img/banner/banner_phonics.jpg" style="margin-left:auto;margin-right:auto"></a>
+          <div class="carousel-caption">
+            <h3>图片标题1</h3>
+            <p>描述内容1...</p>
+          </div>
+        </div>
+        <div class="item"><a href="##"><img src="img/banner/banner_qiangdiao.jpg"></a>
+          <div class="carousel-caption">
+            <h3>图片标题2</h3>
+            <p>描述内容2...</p>
+          </div>
+        </div>
+        <div class="item"><a href="##"><img src="img/banner/banner_zhiye.jpg"></a>
+          <div class="carousel-caption">
+            <h3>图片标题3</h3>
+            <p>描述内容3...</p>
+          </div>
+        </div>
+        <div class="item"><a href="##"><img src="img/banner/qiangdiao_NewConcept.jpg"></a>
+          <div class="carousel-caption">
+            <h3>图片标题4</h3>
+            <p>描述内容4...</p>
+          </div>
+        </div>
+      </div><a href="#slidershow" role="button" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#slidershow" role="button" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <!--推荐老师-->
+    <div class="RecommendTeacher w1100 mCenter">
+      <div class="RecommendHead pr">
+        <div class="tc mt30 Recommend_title pa"><span class="f20">推荐老师</span></div>
+      </div>
+      <div id="teacherList1" class="teacherList mt25">
+      </div>
+    </div>
+    <div class="RecommendTeacher w1100 mCenter">
+      <div class="RecommendHead pr">
+        <div class="tc mt30 Recommend_title pa"><span class="f20">最新入驻</span></div>
+      </div>
+      <div id="teacherList2" class="teacherList">
+      </div>
+    </div>
+    <!--推荐班课-->
+    <div class="RecommendClass w1100 mCenter">
+      <div class="RecommendHead pr">
+        <div class="tc mt30 Recommend_title pa"><span class="f20">推荐班课</span></div>
+      </div>
+      <div id="lessionList1" class="lessonList">
+      </div>
+    </div>
+    <!--推荐节目-->
+    <div class="RecommendProgram w1100 mCenter">
+      <div class="RecommendHead pr">
+        <div class="tc mt30 Recommend_title pa"><span class="f20">推荐节目</span></div>
+      </div>
+      <div id="programList1" class="programList">
+      </div>
+    </div>
+    <div class="RecommendProcess w1100 mCenter">
+      <div class="RecommendHead pr">
+        <div class="tc mt30 Recommend_title pa"><span class="f20">上课流程</span></div>
+      </div>
+      <div id="RecommendProcess1" class="RecommendProcess">
+        <div class="Process_item Process_item1">
+          <p class="Process_title">1.搜索老师</p>
+          <p class="process_content">
+            在种类丰富的课程中，你可以按照多
+            种条件进行筛选（如课程、价格等）
+            找到心仪的老师。众多名师，总有一
+            些合适你。
+          </p>
+        </div>
+        <div class="Process_item Process_item2">
+          <p class="Process_title">2.购买课时</p>
+          <p class="process_content">
+            查看老师的详细信息，观看其视频介
+                 绍，选择合适的老师并预付课程费，
+                 每次课程结束后，由学生确认后将课
+                 时费在线支付给老师。
+          </p>
+        </div>
+        <div class="Process_item Process_item3">
+          <p class="Process_title">3.约课上课</p>
+          <p class="process_content">
+            与老师沟通，进行在线约课，可灵活
+                  选择上课时间、地点和授课方式（在
+                  线视频或线下面授）
+          </p>
+        </div>
+        <div class="Process_item Process_item4">
+          <p class="Process_title">4.课程评价</p>
+          <p class="process_content">
+            课程结束，学生对老师和课程进行评
+                 价，帮助老师发现其优势和不足，提
+                 高教学质量。为其他正在寻找老师的
+                 学生或家长提供参考。
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div><footer class="clearfix w"><div class="w1100 mCenter"><div class="footerList"><h4>帮助中心</h4><ul class="footer1"><li><a href="javascript:;">上课流程</a></li><li><a href="javascript:;">老师入驻</a></li><li><a href="javascript:;">老师帮助</a></li><li><a href="javascript:;">学生帮助</a></li></ul></div><div class="footerList"><h4>服务支持</h4><ul class="footer2"><li><a href="javascript:;">支付方式</a></li><li><a href="javascript:;">意见反馈</a></li><li><a href="javascript:;">侵权投诉</a></li></ul></div><div class="footerList"><h4>关于掌中英语</h4><ul class="footer3"><li><a href="#">了解我们</a></li><li><a href="#">联系我们</a></li><li><a href="#">加入我们</a></li><li><a href="#">网站条款</a></li><li><a href="#">活动公告</a></li></ul></div><div class="footerList"><h4>关注我们</h4><ul class="footer4"><li><a href="javascript:;">官方微信</a></li><li><a href="http://weibo.com/zzenglish">新浪微博</a></li></ul></div><div class="tell"><p class="tellNum">4008118385</p><p class="workTime">周一至周日 8:00~23:00</p></div></div><div class="bottomBox w h30"></div><script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script><script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script><script src="js/plugins.js"></script><script src="js/main.js"></script><script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><script>//轮播图函数
+$(function () {
+   $("#slidershow").carousel({
+      interval: 3000
+   });
+   $("#slidershow a.left").click(function () {
+      $(".carousel").carousel("prev");
+   });
+   $("#slidershow a.right").click(function () {
+      $(".carousel").carousel("next");
+   });
+});
+var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+(function (d, t) {
+   var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+   g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+   s.parentNode.insertBefore(g, s)
+}(document, 'script'));
+</script><script src="js/ajax.js"></script></footer>
+</body></html>
