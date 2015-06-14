@@ -1,0 +1,48 @@
+extends  jade/common/head
+block content
+      div.content
+         div.regBox.row
+            div.regBox_Head
+               p.loginTitle.regTitle 注册
+            div.regMain
+               form.form-horizontal.regForm
+                  div.form-group
+                     label.control-label.col-lg-3.col-md-3.col-sm-3.col-xs-3 手机号：
+                     div.col-lg-9.col-md-9.col-sm-9.col-xs-9
+                         input.form-control(type="text" placeholder="手机号")
+                  div.form-group
+                     label.control-label.col-lg-3.col-md-3.col-sm-3.col-xs-3 密码：
+                     div.col-lg-9.col-md-9.col-sm-9.col-xs-9
+                        input.form-control(type="password" placeholder="密码")
+                  div.form-group
+                     label.control-label.col-lg-3.col-md-3.col-sm-3.col-xs-3 验证码：
+                     div.col-lg-5.col-md-5.col-sm-5.col-xs-5
+                        input.form-control(type="text" placeholder="填写验证码")
+                     div.col-lg-4.col-md-4.col-sm-4.col-xs-4
+                        a.btn.btn-info 获取验证码
+                  div.form-group
+                      div.checkbox.col-lg-8.col-lg-offset-4.col-md-8.col-lg-md-4.col-sm-8.col-sm-offset-4.col-xs-8.col-xs-offset-4
+                         input(type="checkbox")
+                         a.xieyi 我已阅读并同意《掌中英语用户服务协议》
+                  div.form-group
+                     div.col-lg-9.col-md-9.col-sm-9.col-lg-offset-3.col-md-offset-3.col-sm-offset-3.col-xs-offset-3.col-xs-offset-3
+                        a.form-control.btn.btn-info.reg_login 登录
+                  div.form-group
+                     label.col-lg-9.col-lg-offset-3.col-md-9.col-md-offset-3.col-sm-9.col-sm-offset-3.col-xs-9.col-xs-offset-3 已有掌英号？
+                        a.text-info
+                           |直接登录
+                           span.glyphicon.glyphicon-arrow-right
+               p.asThis.regAs 使用以下账号直接登录
+               div.otherLoginBox.pl96
+                  div.otherLogin
+                     a
+                        img.img-responsive(src="img/login/weiboLogin.gif")
+                  div.otherLogin
+                     a
+                        img.img-responsive(src="img/login/qqLogin.gif")
+                  div.otherLogin
+                     a
+                        img.img-responsive(src="img/login/weixinLogin.gif")
+
+      include jade/common/footer.html
+      script(src="js/register.js")

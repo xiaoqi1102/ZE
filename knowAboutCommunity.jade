@@ -1,0 +1,75 @@
+extends jade/common/head
+block content
+
+      div.w
+         img.img-responsive.mCenter(src="img/bigImg.jpg")
+      div.contentTop.w1100
+         div.showBox.leftBox
+            div.up
+                h2.showTitle 课程丰富
+                p.showContent
+                  |小学、初中、高中、大学、出国
+                  |留学、语言培训任你挑
+            div.down
+                h2.showTitle 即时沟通
+                p.showContent.
+                    掌中英语提供在线即时通讯工具
+                    直接联系老师。让沟通随时、随
+                    地、随心
+         div.showBox.midleBox
+             div.up
+                 h2.showTitle 师资保障
+                 p.showContent.
+                     学历身份均认证，教学资质可信
+                     任，真实专业评价好，保障服务
+                     质量高。
+             div.down
+                 h2.showTitle 支付安全
+                 p.showContent.
+                     支付的订单金额存放在掌中英语
+                     中，每次课后满意并确认，课酬
+                     才划转给老师，保证资金安全
+         div.showBox.rightBox
+             div.up
+                 h2.showTitle 节目互动
+                 p.showContent.
+                     发帖、回复、打分、点评互动起
+                     来
+             div.down
+                 h2.showTitle 随时退款
+                 p.showContent.
+                     课程进行中，随时申请退课，返
+                     还未上课的全部剩余课时课)
+      div.teacherOrStudent
+          div.teacherOrStudentContent
+              div.contentLeft.introduceContent
+                  h2.introduceTitle 家长 or 学生
+                  div.mainContent.mContentLeft
+                      -var com=[{title:"搜老师",content:"在掌中英语搜索出合适自己的老师"},{title:"购买课时",content:"选择合适自己的科目和上课方式，购买老师课时后，可获得老师联系方式，与老师确认上课时间。"},{title:"约课上课",content:"和老师确认上课时间后，在系统内向老师发起约课，老师确认约课后，双方按时上课。"},{title:"支付课酬",content:"上课结束后，在系统内确认上课并支付本次课程课酬。如超过24小时不确认，系统将自动确认并将课酬支付给老师。"},{title:"评价老师",content:"确认课酬后，就本节课老师的表现点“赞“，整个课时订单结束后给予老师详细的评价。"}]
+                      -for(var i = 0 ; i < 5; i ++)
+                          div.mainContent
+                              h3.mTitle.mTitleLeft  #{com[i].title}
+                              p.mContent #{com[i].content}
+              div.contentRight.introduceContent
+                  h2.introduceTitle 老师
+                  div.mainContent.mContentRight
+                      -var com=[{title:"入驻平台",content:"完善个人信息至100%，并设置要教授的课时套餐。等到个人信息通过审核后，你就可以被学生搜索到了。"},{title:"查看订单",content:"老师的第一时间获得学生的信息以及购买的课程。"},{title:"如约上课",content:"老师在系统内接到学生约课请求。确认约课后，提前备课。在约定时间上课。"},{title:"收到课酬",content:"上课结束后，在系统内确认上课并支付本次课程课酬。如超过24小时不确认，系统将自动确认并将课酬支付给老师。"},{title:"评价学生",content:"课时结束后，对学生的表现做出评价。"}]
+                      -for(var i = 0 ; i < 5; i ++)
+                          h3.mTitle.mContentRight  #{com[i].title}
+                          p.mContent #{com[i].content}
+      div.teacherOrStudentSecond
+          div.TeacherShowBox
+              div.teacherShowMain.teacherShowBoxRight
+                  -var com=[{title:"线下授课",content:"预约老师在线下场所进行授课"},{title:"现场教学",content:"与老师面对面互动，学习氛围浓厚，注意力更易集中，效果更有保障"},{title:"地点自选",content:"双方可协商上课地点，选择老师上门，学生上门，或第三方提供的场地"}]
+                  -for(var i = 0 ; i < 3; i ++)
+                      div.M
+                          h3.mTitle  #{com[i].title}
+                          p.mContent #{com[i].content}
+              div.teacherShowMain.teacherShowBoxLeft
+                  -var com=[{title:"在线授课",content:"通过掌中英语直接在线视频授课"},{title:"即时互动",content:"通过掌中英语在线教学工具在线上课，能够共享PPT等课程文档，利用IM工具即时沟通，即时解决课程问题。"},{title:"不限地域",content:"名师不在本地？不用担心，课选择你喜欢的名师远程上课：名师在本地？帮你节省上课途中的往返时间"},{title:"价格优惠",content:"在线授课的价格通常会比线下授课价格便宜，选择在线上课，帮你节省更多学习开支"}]
+                  -for(var i = 0 ; i < 4; i ++)
+                      div.M
+                          h3.mTitle  #{com[i].title}
+                          p.mContent #{com[i].content}
+      include jade/common/footer.html
+      script(src="js/knowaboutcommunity.js")

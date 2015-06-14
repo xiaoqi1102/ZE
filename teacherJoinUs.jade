@@ -1,0 +1,48 @@
+extends  jade/common/head
+block content
+   div.w
+      img.img-responsive.mCenter(src="img/joinUs.jpg")
+   div.content
+      //加入掌中英语可以获得什么
+      div.joinUsNow
+         div.joinLeft
+            div.nowBox
+               p.now 现在
+               p.becomeTeacher 入驻掌中英语
+               p.letYou 成为老师会让你
+         div.joinRight
+            p.joinRightBox.
+                  1.每月获得额外收入，扩大生源 <br>
+                  2.专属老师展示平台，提高知名度 <br>
+                  3.免费使用掌中英语强大在线上课工具，足不出户传播知识 <br>
+                  4.用自己擅长的知识和技能帮助他人，解人所难<br>
+                  5.开一档属于自己的节目，赢千万粉丝
+      //谁能成为掌中英语的老师呢
+      div.whoCanBecameTeacher
+          h2.becomeTeacher_title 谁能成为掌中英语的老师？
+          -var becomeTeacher=["我是专业老师","我有英语专长","我是在校学生"]
+          -for(var i = 0 ; i < 3 ; i ++)
+              div.becomeTeacherBox
+                  img(src="img/teacherJoinUs/"+(i+1)+".png")
+                  p.teacherKind #{becomeTeacher[i]}
+      //老师入驻的流程
+      div.technologicalProcess
+          h2.technologicalProcess_title 简单4步轻松完成老师入驻
+          button.technologicalProcess_button 申请入驻
+          p.youCanBegin 以上4步设置完成后，等待系统审核通过，你就可以在平台开课啦
+      div.howYouCanPlay
+          div.playLeft
+              h2.play_title.playLeft_title 入驻后，你可以这么玩
+              p.play_content.
+                  1.开一档节目，与粉丝交流，展示自我！ <br>
+                  2.点评学生口语，让学生家长了解你的水平！
+          span.or or
+          div.playRight
+              h2.play_title.playRight_title 你还可以这么玩
+              p.play_content.
+                  1.上传丰富多彩的视频，让你的形象与才华更立体地展示！ <br>
+                  2.设置课时优惠包，你的专属课程套餐折扣可以吸引更多学生！ <br>
+                  3.丰富你的页面，课在<更多详情>中高度个性定制自己的主页！<br>
+   include  jade/common/footer.html
+   script(src="js/teacherJoinUs.js")
+

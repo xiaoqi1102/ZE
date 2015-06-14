@@ -1,0 +1,67 @@
+extends jade/common/head
+block content
+   script(src="js/searchTeacher.js")
+   div.content.mCenter
+      div.searchHead
+         p.allKinds
+            a(href="javascript:;") 所有分类
+               span.glyphicon.glyphicon-chevron-right
+         -var grades=["全部","小学","初中","高中","大学","语言培训"]
+         p.classKinds
+            span.kinds 课程类别:
+            -for(var i = 0 ; i < grades.length ; i ++ )
+               -if(i==0)
+                  span
+                    a(href="javascript:;").thisKind.active #{grades[i]}
+               -else
+                  span
+                    a(href="javascript:;").thisKind #{grades[i]}
+         p.sorting
+            -var sorts=["默认排序","距离优先","价格"]
+               -for(var i =  0; i <sorts.length;i++)
+                  -if(i==0)
+                     span
+                       a(href="javascript:;").sortKind.active #{sorts[i]}
+                  -else
+                     span
+                       a(href="javascript:;").sortKind #{sorts[i]}
+      div.searchMain.w1100.mCenter
+         -for(var i = 0;i<8;i++)
+           div.searchTeacherItem
+             a.videoHref
+                 img(src="img/RecommendTeacher/teacherList_item1.gif")
+                 img.play(src="img/icon/play.png")
+             p.searchTeacherName
+                a 张老师
+                //characteristics 特征
+             p.notes 大家好。跟着我轻松学习英语快乐学啦啦啦习！
+             p.myLabel
+               // 教龄
+               span.searchTeachingAge 8年教龄
+               //教学特点
+               span.labelSpan.characteristic 因材施教
+               span.labelSpan.unusual 因材施教
+             p.minPriceSpan
+               span.money ￥
+               span.myPrice 20
+               |起
+         p.pageNumList
+           span
+             a(href="##").pageNum.prevPage 上一页
+           span
+             a(href="##").pageNum.nextPage 下一页
+           -for(var i = 1 ; i <6 ; i ++)
+             if(i == 5 )
+                span
+                  a(href="##").pageNum.active #{i}
+             else
+                span
+                   a(href="##").pageNum #{i}
+           span
+             a(href="##").pageNum.more ...
+           span
+             a(href="##").pageNum 30
+           span
+             a(href="##").pageNum.lastPage 尾页
+   include jade/common/footer.html
+   script(src="js/searchTeacher.js")

@@ -1,0 +1,55 @@
+extends jade/common/head
+block content
+    div.wrap
+       h2 选择上课信息
+       hr
+       div.message
+         img
+         h3 name
+         p price
+       div.lesson
+          //约课表单
+          form
+             label(for="choiceLesson") 教学科目
+             select( id="choiceLesson" )
+               option(value="初一英语") 初一英语
+             h3 上课方式
+             -var path=["老师上门","学生上门","协商地点","在线授课"]
+               -each k in path
+                  span #{k}
+             label(for="package") 选择课程套餐
+             select#package
+                option 自定义课时
+             label(for ="time") 请填写你需要购买的时长
+             span
+             input(type="text" value="10" id="time")
+             hr
+             p
+               span 1小时
+               span 无折扣
+               h5 试听课程,为学生提供试听
+             p
+               span 十小时
+               span 无折扣
+               h5 中期课程，适合对学生专项辅导
+             hr
+             label(for ="curriculumAddress")
+             input(type="text" id="curriculumAddress" placeholder="请填写老师上门地址")
+             h3  请填写联系方式
+             label(for ="name") 姓名
+             input(id="name" type="text" placeholder="请填写真实姓名")
+             label(for="phoneNum") 手机号
+             input(type="text" id="phoneNum" placeholder="请输入手机号码")
+             label 验证码
+             input(type="text" placeholder="请输入短信验证码")
+             button 获取验证码
+             textarea(placeholder="给老师留言")
+             label(for ="coupon") 我的优惠券
+             select#coupon
+               option 优惠券
+             p
+               span.money 订单金额
+               span.money 优惠金额
+               span.money 支付金额
+               button  提交订单
+    include jade/common/footer.html

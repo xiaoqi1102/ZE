@@ -1,0 +1,71 @@
+extends jade/common/head
+block content
+         div.main
+           //用户中心
+           div.userCenter
+               div.centerHead
+                   img
+               .centerMain
+                   h3 亲，您当前不能被学生搜索到，以为缺少如下资料
+                   -var data=[{title:"基本资料"},{title:"授课科目"},{title:"授课时段"},{title:"授课区域"},{title:"上传证件"}]
+                   -each d in data
+                       p
+                         h5 #{d.title}
+                         span 开始填写
+           //订单课程
+           div.orderCenter
+               div.order-head
+                   p
+                     h3 我的订单
+                     span 全部(2)
+               div.order-main
+                   div.order-main-head
+                       p
+                         h5 订单号
+                         span 2015-03-05 11:52
+                       div.order-main-content
+                           img
+
+           //我的订单
+           //我的课表
+
+           //个人设置
+           .personalSet
+               .setHead
+               .setMain
+                   .setContent
+                       -var messages= [{title:"姓名："},{title:"昵称："},{title:"生日"},{title:"教学地址"},{title:"学历"},{title:"院校"},{title:"专业"},{title:"教龄"},{title:"身份"},{title:"个性签名"},{title:"教学特点"},{title:"自我描述"}]
+                       -each message in messages
+                         p #{message.title}
+           //基本资料
+           //授课设置
+           //证件认证
+           //钱包
+           //消息
+
+         div.sideBar
+            -var persons=["用户中心","订单课程","个人设置","钱包","消息"]
+            ul
+               li
+                  a(href="javascript:;") 用户中心
+               li
+                  a(href="javascript:;") 订单课程
+                  ul
+                     li
+                        a(href="javascript:;") 我的订单
+                     li
+                        a(href="javascript:;") 我的课表
+               li
+                 a(href="javascript:;") 个人设置
+                 ul
+                    li
+                      a(href="javascript:;") 基本资料
+                    li
+                      a(href="javascript:;") 授课设置
+                    li
+                      a(href="javascript:;") 证件认证
+               li
+                  a(href="javascript:;") 钱包
+               li
+                  a(href="javascript:;") 消息
+         include jade/common/footer.html

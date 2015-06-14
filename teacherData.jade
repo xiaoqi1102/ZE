@@ -1,0 +1,37 @@
+extends jade/common/head
+block content
+         div.wrap
+            div.dataHead
+               .left
+                  img
+                  span name
+                  span gender
+                  span introduction
+                  span 教龄
+                  span 学生总数
+                  span 累计教学
+                  span 好评率
+               .right
+                  -var right=[{title:"身份认证"},{title:"学历认证"},{title:"教师证"},{title:"专业资质"}]
+                  -each r in right
+                     span #{r.title}
+            .main
+               .navBar
+                  span 基本资料
+                  span 过往经历
+                  span 成果展示
+                  span 学生评价
+                  div.basicData
+                     h4 基本资料
+                     -var basicData=[{title:"授课科目"},{title:"教师身份"},{title:"最高学历"},{title:"毕业院校"},{title:"授课院校"},{title:"授课方式"},{title:"授课区域"},{title:"教学特长"}]
+                     -each data in basicData
+                        p #{data.title}
+               .myPhoto
+                  ul.photoList
+            .sidebar
+               .subject
+                  h3 授课科目
+                  p ￥150~250/小时
+                  select
+
+         include jade/common/footer.html

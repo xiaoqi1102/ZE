@@ -1,0 +1,39 @@
+extends jade/common/head
+block content
+      div.content
+         div.loginBox
+            div.loginHead
+               p.loginTitle 登录
+            div.loginMain
+               div.loginMain_left
+                  form.form-horizontal
+                     label.label_login.label_userId
+                     input.login_Input.userId(type="text")
+                     label.label_login.label_password
+                     input.login_Input.password(type="password")
+                     div.checkbox.rememberBox
+                        label
+                           input(type="checkbox")
+                           |记住密码
+                     a.forget 忘记密码？
+                     a.btn.btn-info.loginBtn2 登录
+               div.loginMain_right
+                  p.have_no 还没有账号？
+                  p.regLink
+                     a.text-info
+                        |立即注册&nbsp;
+                        span.glyphicon.glyphicon-arrow-right
+                  p.asThis 使用如下账号登陆
+                  div.otherLoginBox
+                     div.otherLogin
+                        a
+                           img.img-responsive(src="img/login/weiboLogin.gif")
+                     div.otherLogin
+                        a
+                           img.img-responsive(src="img/login/qqLogin.gif")
+                     div.otherLogin
+                        a
+                           img.img-responsive(src="img/login/weixinLogin.gif")
+      include jade/common/footer.html
+      script(src="js/login.js")
+

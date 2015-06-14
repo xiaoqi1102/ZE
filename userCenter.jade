@@ -1,0 +1,141 @@
+extends  jade/common/head
+block content
+      div.content
+         div.userBox
+            div.userContentSidebar
+               ul.userContentList
+                  li
+                     div.thisOne 用户中心
+                  li
+                     div.thisOne.active 订单课程
+                     ul.secondList
+                        li
+                          a 我的订单
+                        li.active
+                           a.active 我的课表
+                  li
+                     div.thisOne 个人设置
+                     ul.secondList
+                        li
+                           a 基本资料
+                        li
+                           a 授课设置
+                        li
+                           a 证件设置
+                  li
+                     div.thisOne 管理节目
+                     ul.secondList
+                        li
+                           a 每日一句
+                        li
+                           a 天天学英语
+                  li
+                     div.thisOne 钱包
+                  li
+                     div.thisOne 消息
+                  li
+                     div.thisOne 账号设置
+            div.userCenterMain
+               include jade/userCenter/userCenter_Schedule
+               div.allLessonList
+                  div.thisLesson
+                     div.thisLessonHead
+                        span 03-09上午 06:00~06:30
+                        span.thisLessonHea_right 待老师确认约课
+                     div.thisLessonContent
+                        p.thisLesson_teacherName Liberty
+                        div.lessonMain
+                           div.lessonLeft
+                              p.
+                                 初一英语-阅读  学生上门<br>
+                                 上课地点：广州市天河区五山路248号金山大厦<br>
+                                 备注：我的孩子意识依稀画笔，满怀春风欲天地两不见，芙蓉不愿负重也生鬼良机
+                           div.lessonRight
+                              button.btn.canNotBtn.disabled 取消约课
+                  div.thisLesson
+                     div.thisLessonHead
+                        span 03-09上午 06:00~06:30
+                        span.thisLessonHea_right.text-warning 待确认约课
+                     div.thisLessonContent
+                        p.thisLesson_teacherName Liberty
+                        div.lessonMain
+                           div.lessonLeft
+                              p.
+                                 初一英语-阅读  学生上门<br>
+                                 上课地点：广州市天河区五山路248号金山大厦<br>
+                                 备注：我的孩子意识依稀画笔，满怀春风欲天地两不见，芙蓉不愿负重也生鬼良机
+                           div.lessonRight
+                              button.btn.btn-warning.canBtn 确认约课
+                              button.btn.canNotBtn.disabled.mt10 取消约课
+                              button.btn.btn-info.infoBtn 修改约课时间
+                  div.thisLesson
+                     div.thisLessonHead
+                        span 03-09上午 06:00~06:30
+                        span.thisLessonHea_right.text-warning 待确认课酬
+                     div.thisLessonContent
+                        p.thisLesson_teacherName Liberty
+                        div.lessonMain
+                           div.lessonLeft
+                              p.
+                                 初一英语-阅读  学生上门<br>
+                                 上课地点：广州市天河区五山路248号金山大厦<br>
+                                 备注：我的孩子意识依稀画笔，满怀春风欲天地两不见，芙蓉不愿负重也生鬼良机
+                           div.lessonRight
+                              button.btn.btn-warning.canBtn 确认课酬
+                              button.btn.canNotBtn.mt10 申诉
+                  div.thisLesson
+                     div.thisLessonHead
+                        span 03-09上午 06:00~06:30
+                        span.thisLessonHea_right.text-info 上课中
+                     div.thisLessonContent
+                        p.thisLesson_teacherName Liberty
+                        div.lessonMain
+                           div.lessonLeft
+                           p.
+                              初一英语-阅读  学生上门<br>
+                              上课地点：广州市天河区五山路248号金山大厦<br>
+                              备注：我的孩子意识依稀画笔，满怀春风欲天地两不见，芙蓉不愿负重也生鬼良机
+                           div.lessonRight
+                  div.thisLesson
+                     div.thisLessonHead
+                        span 03-09上午 06:00~06:30
+                        span.thisLessonHea_right  已完成
+                     div.thisLessonContent
+                        p.thisLesson_teacherName Liberty
+                        div.lessonMain
+                           div.lessonLeft
+                              p.
+                                 初一英语-阅读  学生上门<br>
+                                 上课地点：广州市天河区五山路248号金山大厦<br>
+                                 备注：我的孩子意识依稀画笔，满怀春风欲天地两不见，芙蓉不愿负重也生鬼良机
+                           div.lessonRight
+                  div.thisLesson
+                     div.thisLessonHead
+                        span 03-09上午 06:00~06:30
+                        span.thisLessonHea_right  已取消
+                     div.thisLessonContent
+                        p.thisLesson_teacherName Liberty
+                        div.lessonMain
+                           div.lessonLeft
+                           p.
+                              初一英语-阅读  学生上门<br>
+                              上课地点：广州市天河区五山路248号金山大厦<br>
+                              备注：我的孩子意识依稀画笔，满怀春风欲天地两不见，芙蓉不愿负重也生鬼良机
+                           div.lessonRight
+                  div.thisLesson
+                     div.thisLessonHead
+                        span 03-09上午 06:00~06:30
+                        span.thisLessonHea_right.text-info  待上课
+                     div.thisLessonContent
+                        p.thisLesson_teacherName Liberty
+                        div.lessonMain
+                           div.lessonLeft
+                              p.
+                                 初一英语-阅读  学生上门<br>
+                                 上课地点：广州市天河区五山路248号金山大厦<br>
+                                 备注：我的孩子意识依稀画笔，满怀春风欲天地两不见，芙蓉不愿负重也生鬼良机
+                           div.lessonRight
+                              button.btn.canNotBtn.mt10 取消约课
+                              button.btn.btn-info.infoBtn 去上课
+      include jade/common/footer.html
+      script(src="js/userCenter.js")

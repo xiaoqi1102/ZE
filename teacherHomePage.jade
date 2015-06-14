@@ -1,0 +1,347 @@
+extends  jade/common/head
+block content
+   div.teacherHomePageBigPic
+       img.img-responsive.mCenter(src="img/teacherHomePage/teacherHomePageBg.png")
+       div.thisTeacherData
+          img.headPic(src="img/teacherHomePage/headPic.png")
+          p.thisTeacherName Aimy
+          p.thisTeacherSlogan Sweet talk is ready for the left ear.
+          p.thisTeachaerPlace 广州 天河区
+          button.btn.btn-danger.askThisTeacherBtn 咨询老师
+   //老师主页的切换面板 包括主页 课程 节目 相册 个人资料 评价
+   div.teacherHomePageMain
+      ul#myTab.nav.nav-tabs.homePageList(role="tablist")
+         -for(var i = 0 ; i < 6 ; i ++)
+            -var tab= [{href:"home",title:"主页"},{href:"lessons",title:"课程"},{href:"programs",title:"节目"},{href:"albumOrVideo",title:"相册/视频"},{href:"personalData",title:"个人资料"},{href:"evaluation",title:"评价"}]
+               -if(i==0)
+                   li.thisTab.active
+                      a(href="#" + tab[i].href  role="tab" data-toggle="tab") #{tab[i].title}
+               -else
+                  li.thisTab
+                     a(href="#" + tab[i].href  role="tab" data-toggle="tab") #{tab[i].title}
+      div#myTabContent.tab-content
+         -for(var i = 0 ; i < 6 ; i ++)
+            -var tab= [{href:"home",title:"主页"},{href:"lessons",title:"课程"},{href:"programs",title:"节目"},{href:"albumOrVideo",title:"相册/视频"},{href:"personalData",title:"个人资料"},{href:"evaluation",title:"评价"}]
+               case i
+                  when 0
+                       div(id=tab[i].href).active.tab-pane.fade.in
+                          div.homeLeft
+                             div.HomePageComments
+                                div.HomePageCommentsName
+                                   p.HomePageTeacherName
+                                      |Aimy
+                                      span.numberOfComments
+                                          small (10条评论)
+                                div.HomePageCommentsMain
+                                div.HomePageCommentsBottom
+                                   p.getLessonWay
+                                      |上课方式：
+                                      span.lessonWay 在线授课
+                                      span.lessonWay 学生上门
+                                      span.lessonWay 老师上门
+                                   p.myLabel
+                                       // 教龄
+                                       span.searchTeachingAge.labelIcon 8年教龄
+                                       //教学特点
+                                       span.labelSpan.characteristic.labelIcon 因材施教
+                                       span.labelSpan.unusual.labelIcon 因材施教
+                             //主页-过往经历
+                             div.teacherPast
+                                 div.teacherPast_head
+                                    h3.allPrograms_title 过往经历
+                                 div.teacherPastContent
+                                    div.teacherPastItem
+                                       div.pastItemHead
+                                          h4.ItemHeadTitle 2015年3月 至 2015年2月
+                                          p.pastItemContent.
+                                             本人毕业于华南师范大学英语教育专业，在大学期
+                                                     间获得本人毕业于华南师范大学英语教育专业，在
+                                                     大学华南师范大学英语教育专业...
+                                       div.pastItemHead
+                                          h4.ItemHeadTitle 2015年3月 至 2015年2月
+                                          p.pastItemContent.
+                                             本人毕业于华南师范大学英语教育专业，在大学期
+                                                       间获得本人毕业于华南师范大学英语教育专业，在
+                                                       大学华南师范大学英语教育专业...
+                                    div.teacherPastFooter
+                                       a.pastMore 更多经历
+                             //主页-教学成果版块
+                             div.teacherPast
+                                 div.teacherPast_head
+                                    h3.allPrograms_title 教学成果
+                                 div.teacherPastContent
+                                    div.teacherPastItem
+                                       div.pastItemHead
+                                          h4.ItemHeadTitle 2015年3月 至 2015年2月
+                                          p.pastItemContent.
+                                             通过不断的教学总结以及分析近十年的中考英语题
+                                             型，归纳总结出中考英语阅读八大题型，中考英语
+                                             阅读四大文...
+                                       div.pastItemHead
+                                          h4.ItemHeadTitle 2015年3月 至 2015年2月
+                                          p.pastItemContent.
+                                             通过不断的教学总结以及分析近十年的中考英语题
+                                             型，归纳总结出中考英语阅读八大题型，中考英语
+                                             阅读四大文...
+                                    div.teacherPastFooter
+                                       a.pastMore 更多成果
+                              //主页- 常用教学地点
+                             div.teacherPast
+                                 div.teacherPast_head
+                                    h3.allPrograms_title 常用教学地点
+                                 div.teacherPastContent
+                                    //地图
+                                    div.thisPlace
+                                       img(src="img/teacherHomePage/teacherPlace.gif")
+                                    div.teacherPastFooter
+                                       span.teachAdress 广州市天河区五山路248号金山大厦
+
+
+                          div.homeRight
+                             //不同课程的切换面板
+                             div.allLessons
+                                ul#lessonTapList(role="tablist").nav.nav-tabs
+                                   -var lessonTap=[{href:"onLineLesson",title:"在线授课"},{href:"downLineLesson",title:"线下班课"},{href:"one-on-oneLesson",title:"一对一课程"}]
+                                   -for(var j = 0 ; j <lessonTap.length ;j++)
+                                       case j
+                                          when 0
+                                             li.active
+                                                a(href="#"+lessonTap[j].href role="tab" data-toggle="tab") #{lessonTap[j].title}
+                                          when 1
+                                             li
+                                                a(href="#"+lessonTap[j].href role="tab" data-toggle="tab") #{lessonTap[j].title}
+                                          when 2
+                                             li
+                                                a(href="#"+lessonTap[j].href role="tab" data-toggle="tab") #{lessonTap[j].title}
+                                div#lessonTapContent.tab-content.lessonContentMain
+                                   -var lessonTap=[{href:"onLineLesson",title:"在线授课"},{href:"downLineLesson",title:"线下班课"},{href:"one-on-oneLesson",title:"一对一课程"}]
+                                   -for(var n= 0 ; n < lessonTap.length;n++ )
+                                       case n
+                                          when 0
+                                             //主页-在线授课
+                                             div(id=lessonTap[n].href).tab-pane.fade.in.active
+                                                div.lessonTabItemList
+                                                   -for(var p = 0 ; p < 3 ; p++)
+                                                      div.lessonTabItem
+                                                         div.lessonImgBox
+                                                             img(src="img/teacherHomePage/lessonTabItem.gif")
+                                                         div.lessonContentBox
+                                                            h3.lessonTitle 15年八天英语春季班报名火热进行中...
+                                                            p.lessonData
+                                                               |课程时长：
+                                                               span.lessonLength 6小时 <br>
+                                                               |开课时间：
+                                                               span.beginTime 2015.03.25 <br>
+                                                               |上课方式：
+                                                               span.theLessonWay 在线授课 <br>
+                                                         button.btn.btn-danger.baoMin 还剩15个名额   立即报名
+                                                         span.lessonPrice ￥3100
+                                          when 1
+                                             //主页-线下班课
+                                             div(id=lessonTap[n].href).tab-pane.fade
+                                                div.lessonTabItemList
+                                                   -for(var p = 0 ; p < 2 ; p++)
+                                                      div.lessonTabItem
+                                                         div.lessonImgBox
+                                                            img(src="img/teacherHomePage/lessonTabItem.gif")
+                                                         div.lessonContentBox
+                                                            h3.lessonTitle 15年八天英语春季班报名火热进行中...
+                                                            p.lessonData
+                                                               | 课程时长：
+                                                               span.lessonLength 6小时 <br>
+                                                               | 开课时间：
+                                                               span.beginTime 2015.03.25 <br>
+                                                               | 上课方式：
+                                                               span.theLessonWay 线下班课 <br>
+                                                         button.btn.btn-danger.baoMin 还剩15个名额   立即报名
+                                                         span.lessonPrice ￥3100
+                                          when 2
+                                             div(id=lessonTap[n].href).tab-pane.fade
+                                                div.lessonTabItemList
+                                                -for(var p = 0 ; p < 1 ; p++)
+                                                   div.lessonTabItem
+                                                      div.lessonImgBox
+                                                         img(src="img/teacherHomePage/lessonTabItem.gif")
+                                                      div.lessonContentBox
+                                                         h3.lessonTitle 15年八天英语春季班报名火热进行中...
+                                                         p.lessonData
+                                                            | 课程时长：
+                                                            span.lessonLength 6小时 <br>
+                                                            | 开课时间：
+                                                            span.beginTime 2015.03.25 <br>
+                                                            | 上课方式：
+                                                            span.theLessonWay 1对1课程 <br>
+                                                      button.btn.btn-danger.baoMin 还剩15个名额   立即报名
+                                                      span.lessonPrice ￥3100
+
+                             div.allPrograms
+                                div.allPrograms_head
+                                   h3.allPrograms_title 节目
+                                div.allProgramsList
+                                   -for(var pro=0 ; pro<2;pro++)
+                                      div.allProgramsItem
+                                         div.lessonImgBox
+                                            img(src="img/teacherHomePage/lessonTabItem.gif")
+                                         div.ProgramContent
+                                            h4.itemTitle 外贸英语
+                                            p.programItemData
+                                                span.theNumOfAttention 4.7K人关注
+                                                span.ProgramItemTeacherName Liberty
+                                            p.ProgramItemSlogan 让更多做外贸业务的伙伴爱上英语
+                             //主页-照片、视频版块
+                             div.allPrograms.allPic
+                                div.allPrograms_head
+                                   h3.allPrograms_title 视频/照片
+                                       span.theNumberOfPic (3个视频,5张照片)
+                                div.pictureShowMain
+                                   div.bigPicBox
+                                      img.bigPic(src="img/teacherHomePage/PicItemBigPic.gif")
+                                   div.picListBox
+                                      div.PicList
+                                         -for(var pic= 0 ; pic < 10 ;pic++)
+                                             a.teacherPicItemHref
+                                                img.teacherPicItem(src="img/teacherHomePage/pictureOrVideo/smallPic.gif")
+                             //主页-更多详情版块
+                             div.allPrograms
+                                div.allPrograms_head
+                                   h3.allPrograms_title 更多详情
+                                div.moreContent
+                                   p.moreContentIntroduce.
+                                      让更多做外贸业务的伙伴爱上英语翻衣可飞，戏里哗然遍成葳蕤，杯中影重明明照作虚实空空我与自己
+                                      唱相守，梦处风月隔流光陈焕与仅作染毒广为权重或可然不课桌。清远西蒙不紫的，个错宫龙。负重也
+                                      生贵良机，肝风部分蛊惑。
+                                   img.moreContent_img(src="img/teacherHomePage/moreContent.gif")
+                             //主页-评论版块
+                             div.allLessons
+                                ul#commentsList.nav.nav-tabs(role="tablist")
+                                   -var com=[{href:"all",title:"全部"},{href:"good",title:"好评"},{href:"bad",title:"差评"}]
+                                       -for(var c = 0 ; c <com.length;c++)
+                                          case c
+                                             when 0
+                                                li.active
+                                                   a(href="#"+com[c].href role="tab" data-toggle="tab") #{com[c].title}
+                                             when 1
+                                                li
+                                                   a(href="#" + com[c].href role="tab" data-toggle="tab") #{com[c].title}
+                                             when 2
+                                                li
+                                                   a(href="#" + com[c].href role="tab" data-toggle="tab") #{com[c].title}
+
+                                div#commentsContent.tab-content
+                                   -var com=[{href:"all",title:"全部"},{href:"good",title:"好评"},{href:"bad",title:"差评"}]
+                                   -for(var aa=0;aa<com.length;aa++)
+                                       case aa
+                                          when 0
+                                            div(id=com[aa].href).tab-pane.fade.in.active
+                                               //主页-全部评论面板
+                                               div.commtentContentItemList
+                                                  div.commtentItem
+                                                     div.commtentItemLeft
+                                                        div.comHeadPicImgBox
+                                                           img.comHeadPic(src="img/teacherHomePage/userHeadPic.gif")
+                                                     div.commtentItemRight
+                                                        div.userCom.smile
+                                                           p.ComUserName 萧潇
+                                                        div.userComContent
+                                                           p.
+                                                              之前考过托福，但是听力一直是障碍，总是徘徊在20分左右，但是在老师的结构上学会了
+                                                              该听什么，不该听什么。再辅助以老师的听力词汇分数大概提升到了4到5分，之后老师的
+                                                              听力的选项分析帮助我在结构不清晰的时候选对正确选项。最后考出了接近满分的成绩，
+                                                              学习老师。非常感谢！
+                                                        div.userComFooter
+                                                           span.com_lessonName 初一英语
+                                                           span.com_date 2015-03-25
+                                                  div.commtentItem
+                                                     div.commtentItemLeft
+                                                        div.comHeadPicImgBox
+                                                           img.comHeadPic(src="img/teacherHomePage/userHeadPic.gif")
+                                                     div.commtentItemRight
+                                                        div.userCom.unSmile
+                                                           p.ComUserName 萧潇
+                                                        div.userComContent
+                                                           p.
+                                                              之前考过托福，但是听力一直是障碍，总是徘徊在20分左右，但是在老师的结构上学会了
+                                                              该听什么，不该听什么。再辅助以老师的听力词汇分数大概提升到了4到5分，之后老师的
+                                                              听力的选项分析帮助我在结构不清晰的时候选对正确选项。最后考出了接近满分的成绩，
+                                                              学习老师。非常感谢！
+                                                        div.userComFooter
+                                                           span.com_lessonName 初一英语
+                                                           span.com_date 2015-03-25
+                                               p.pageNumList.numberList2
+                                                  span
+                                                     a(href="##").pageNum.prevPage 上一页
+                                                  span
+                                                     a(href="##").pageNum.nextPage 下一页
+                                                  -for(var ii = 1 ; ii <6 ; ii ++)
+                                                     if(ii == 5 )
+                                                        span
+                                                           a(href="##").pageNum.active #{ii}
+                                                     else
+                                                        span
+                                                           a(href="##").pageNum #{ii}
+                                                  span
+                                                     a(href="##").pageNum.more ...
+                                                  span
+                                                     a(href="##").pageNum 30
+                                                  span
+                                                     a(href="##").pageNum.lastPage 尾页
+                                          when 1
+                                             div(id=com[aa].href).tab-pane.fade
+                                                //主页-好评面板
+                                                div.commtentContentItemList
+                                                   div.commtentItem
+                                                      div.commtentItemLeft
+                                                         div.comHeadPicImgBox
+                                                            img.comHeadPic(src="img/teacherHomePage/userHeadPic.gif")
+                                                      div.commtentItemRight
+                                                         div.userCom.smile
+                                                            p.ComUserName 萧潇
+                                                         div.userComContent
+                                                            p.
+                                                               之前考过托福，但是听力一直是障碍，总是徘徊在20分左右，但是在老师的结构上学会了
+                                                               该听什么，不该听什么。再辅助以老师的听力词汇分数大概提升到了4到5分，之后老师的
+                                                               听力的选项分析帮助我在结构不清晰的时候选对正确选项。最后考出了接近满分的成绩，
+                                                               学习老师。非常感谢！
+                                                         div.userComFooter
+                                                            span.com_lessonName 初一英语
+                                                            span.com_date 2015-03-25
+                                          when 2
+                                             div(id=com[aa].href).tab-pane.fade
+                                                //主页-差评面板
+                                                div.commtentContentItemList
+                                                   div.commtentItem
+                                                      div.commtentItemLeft
+                                                         div.comHeadPicImgBox
+                                                            img.comHeadPic(src="img/teacherHomePage/userHeadPic.gif")
+                                                      div.commtentItemRight
+                                                         div.userCom.unSmile
+                                                            p.ComUserName 萧潇
+                                                         div.userComContent
+                                                            p.
+                                                               之前考过托福，但是听力一直是障碍，总是徘徊在20分左右，但是在老师的结构上学会了
+                                                               该听什么，不该听什么。再辅助以老师的听力词汇分数大概提升到了4到5分，之后老师的
+                                                               听力的选项分析帮助我在结构不清晰的时候选对正确选项。最后考出了接近满分的成绩，
+                                                               学习老师。非常感谢！
+                                                         div.userComFooter
+                                                            span.com_lessonName 初一英语
+                                                            span.com_date 2015-03-25
+                  when 1
+                     div(id=tab[i].href).tab-pane.fade
+                        include jade/teacherHomePage/allLesson/homePage_allLesson
+                  when 2
+                        div(id=tab[i].href).tab-pane.fade #{tab[i].title}面板
+                  when 3
+                     div(id=tab[i].href).tab-pane.fade #{tab[i].title}面板
+                  when 4
+                     div(id=tab[i].href).tab-pane.fade
+                        include jade/teacherHomePage/personalData/homePage_personalData
+                  when 5
+                     div(id=tab[i].href).tab-pane.fade
+                        div.allComment
+                           include jade/teacherHomePage/homePage_comment/homePage_comment
+
+
+   include  jade/common/footer.html
+   script(src="js/teacherHomePage.js")
+
+
