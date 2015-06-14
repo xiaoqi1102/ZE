@@ -1,0 +1,135 @@
+extends jade/common/head
+
+block content
+  div.content
+     //轮播图
+     div#slidershow.container-fluid.carousel.slide
+         ol.carousel-indicators
+             li(data-target="#slidershow" data-slide-to="0").active
+             li(data-target="#slidershow" data-slide-to="1")
+             li(data-target="#slidershow" data-slide-to="2")
+             li(data-target="#slidershow" data-slide-to="3")
+         div.carousel-inner
+             div.item.active
+                 a(href="##")
+                    img(src="img/banner/banner_phonics.jpg" style="margin-left:auto;margin-right:auto")
+                 div.carousel-caption
+                     h3 图片标题1
+                     p 描述内容1...
+             div.item
+                 a(href="##")
+                     img(src="img/banner/banner_qiangdiao.jpg")
+                 div.carousel-caption
+                     h3 图片标题2
+                     p 描述内容2...
+             div.item
+                 a(href="##")
+                     img(src="img/banner/banner_zhiye.jpg")
+                 div.carousel-caption
+                     h3 图片标题3
+                     p 描述内容3...
+             div.item
+                 a(href="##")
+                     img(src="img/banner/qiangdiao_NewConcept.jpg")
+                 div.carousel-caption
+                     h3 图片标题4
+                     p 描述内容4...
+         a(href="#slidershow" role="button").left.carousel-control
+            span.glyphicon.glyphicon-chevron-left
+         a(href="#slidershow" role="button").right.carousel-control
+            span.glyphicon.glyphicon-chevron-right
+     //推荐老师
+     div.RecommendTeacher.w1100.mCenter
+        div.RecommendHead.pr
+            div.tc.mt30.Recommend_title.pa
+                span.f20 推荐老师
+        div#teacherList1.teacherList.mt25
+          //-for(var i = 0 ;i < 4 ; i++)
+              div.teacherList_item
+                  a(href="javascript:;")
+                    img.teacherPhoto(src="img/RecommendTeacher/teacherList_item"+(i+1)+".gif")
+                    img.play(src="img/icon/play.png")
+                  p.teacherData
+                    a.teacherName(href="javascript:;") Liberty
+                    span.teachingAge 8年教龄
+                  p.intruduce 大家好。跟着我轻松学习英语快乐学啦啦啦习！
+                  p.where
+                    span.location 广州-天河区
+     div.RecommendTeacher.w1100.mCenter
+       div.RecommendHead.pr
+          div.tc.mt30.Recommend_title.pa
+            span.f20 最新入驻
+       div#teacherList2.teacherList
+           //-for(var i = 0 ;i < 4 ; i++)
+               div.teacherList_item
+                   a(href="##")
+                       img.teacherPhoto(src="img/RecommendTeacher/teacherList_item" + (i + 1) + ".gif")
+                       img.play(src="img/icon/play.png")
+                   p.teacherData
+                       a.teacherName(href="javascript:;") Liberty
+                       span.teachingAge 8年教龄
+                   p.intruduce 大家好。跟着我轻松学习英语快乐学啦啦啦习！
+                   p.where
+                       span.location 广州-天河区
+     //推荐班课
+     div.RecommendClass.w1100.mCenter
+       div.RecommendHead.pr
+           div.tc.mt30.Recommend_title.pa
+               span.f20 推荐班课
+       div#lessionList1.lessonList
+         //-for(var i = 0 ; i <4 ;i++)
+           div.lessonList_item
+             a(href="##")
+                 img.teacherPhoto(src="img/RecommendTeacher/teacherList_item"+(i+1)+".gif")
+                 img.play(src="img/icon/play.png")
+             p.classData 15年八天英语春季班
+             p.classTime 开课：2015-03-28 8:00~10:00
+             p.teachers 老师：Liberty、Amy
+     //推荐节目
+     div.RecommendProgram.w1100.mCenter
+       div.RecommendHead.pr
+         div.tc.mt30.Recommend_title.pa
+           span.f20 推荐节目
+       div#programList1.programList
+         //-for(var i = 0 ; i <4 ;i ++)
+           div.program_item.pr
+               a(href="##").ProgramHref
+                 img.RecommendProgram_item1_img(src="img/RecommendProgram/RecommendProgram_item"+(i+1)+".png")
+                 div.programIntroduceBox
+                   p.introduce 每日一句，优美句子。英语天天说。
+               p.programName 英语天天说
+               p.price  4.5k
+     div.RecommendProcess.w1100.mCenter
+         div.RecommendHead.pr
+             div.tc.mt30.Recommend_title.pa
+                 span.f20 上课流程
+         div#RecommendProcess1.RecommendProcess
+             div.Process_item.Process_item1
+                 p.Process_title 1.搜索老师
+                 p.process_content.
+                     在种类丰富的课程中，你可以按照多
+                     种条件进行筛选（如课程、价格等）
+                     找到心仪的老师。众多名师，总有一
+                     些合适你。
+             div.Process_item.Process_item2
+                 p.Process_title 2.购买课时
+                 p.process_content.
+                     查看老师的详细信息，观看其视频介
+                          绍，选择合适的老师并预付课程费，
+                          每次课程结束后，由学生确认后将课
+                          时费在线支付给老师。
+             div.Process_item.Process_item3
+                 p.Process_title 3.约课上课
+                 p.process_content.
+                     与老师沟通，进行在线约课，可灵活
+                           选择上课时间、地点和授课方式（在
+                           线视频或线下面授）
+             div.Process_item.Process_item4
+                 p.Process_title 4.课程评价
+                 p.process_content.
+                     课程结束，学生对老师和课程进行评
+                          价，帮助老师发现其优势和不足，提
+                          高教学质量。为其他正在寻找老师的
+                          学生或家长提供参考。
+
+    include jade/common/footer.html
