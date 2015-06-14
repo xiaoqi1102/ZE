@@ -1,0 +1,2233 @@
+/*字体*/
+.Lh35{line-height: 35px}
+.f12{font-size: 12px}
+.f14{font-size: 14px}
+.f15{font-size: 15px}
+.f16{font-size: 16px}
+.f18{font-size: 18px}
+.f20{font-size: 20px}
+.f22{font-size: 22px}
+.f24{font-size: 24px}
+.f27{font-size: 27px}
+.pt20{padding-top: 20px}
+.f26{font-size: 26px}
+.tCenter{text-align: center}
+.tr{text-align: right}
+.tl{text-align: left}
+.fb{font-weight:bold}
+.fn{font-weight:normal;}
+.text-info{color:@color}
+input{font-family: 'microsoft yahei', Arial, sans-serif}
+/*颜色*/
+
+.age{background-color: @age}
+.cBlack{color: #000000}
+.colw{color: #ffffff}
+.cblue{color: #049BC6 }
+.c3c{color: #3C3C3C}
+.grey{color: #B2B2B2}
+.cE6{color: #E6E6E6}
+.bW{background-color: #ffffff}
+.bcBlack{background-color: #000000}
+/*排版*/
+.fl{float: left}
+.db{display: block}
+.ib{display: inline-block}
+.mCenter{margin-left: auto;margin-right: auto}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+/*变量*/
+@c5d:#5DE3BF;
+@c65:#656565;
+@c73:#737373;
+@l1100:1100px;
+@a7:#A7A7A7;
+@pl:100px;
+@color:#00ACDD;
+@f22:22px;
+@height:495px;
+@F:#2F2F2F;
+@w200:200px;
+@l70:70px;
+@l240:240px;
+@l340:340px;
+@age:#33CDAB;
+@o:#FF6500;
+@itemWidth:( @l1100 - 3*20)/4;
+.background-img(@url,@bg:#fff){background:@bg url(@url) no-repeat 53px 18px}
+.border-top(@col: #F96F57){
+  border-top:5px solid @col
+}
+/*边距*/
+.m0{margin: 0}
+.m10{margin: 10px}
+.ml0{margin-left: 0px}
+.ml20{margin-left: 20px}
+.ml60{margin-left: 60px}
+.mr0{margin-right: 0;}
+.mr10{margin-right: 10px}
+.mr18{margin-right: 18px}
+.mr16{margin-right: 16px}
+.ml30{margin-left: 30px}
+.ml40{margin-left: 40px}
+.ml45{margin-left: 45px}
+.ml140{margin-left: 140px}
+.mr20{margin-right: 20px}
+.mr30{margin-right: 30px}
+.mr40{margin-right: 40px}
+.mr45{margin-right: 45px}
+.mr60{margin-right: 60px}
+.mt10{margin-top: 10px}
+.mt75{margin-top: 75px}
+.mt0{margin-top: 0}
+.mt15{margin-top: 15px}
+.mt20{margin-top: 20px}
+.mt25{margin-top: 25px}
+.mt28{margin-top: 28px}
+.mt30{margin-top: 30px}
+.mt35{margin-top: 35px}
+.mt40{margin-top: 40px}
+.mt90{margin-top: 90px}
+.mt100{margin-top: 100px;}
+.mt110{margin-top: 110px}
+.mb0{margin-bottom: 0;}
+.mb5{margin-bottom: 5px}
+.mb10{margin-bottom: 10px}
+.mb18{margin-bottom: 18px}
+.mb20{margin-bottom: 20px}
+.mb25{margin-bottom: 25px}
+.mb30{margin-bottom: 30px}
+.mb35{margin-bottom: 35px;}
+.mb40{margin-bottom: 40px}
+.mb45{margin-bottom: 45px}
+.mb200{margin-bottom: 200px}
+.p10{padding: 10px}
+.pl0{padding-left: 0}
+.p60{padding: 60px}
+.pl10{padding-left: 10px}
+.pl15{padding-left: 15px}
+.pl20{padding-left: 20px}
+.pl30{padding-left: 30px}
+.pl25{padding-left: 25px}
+.pl30{padding-left: 30px}
+.pl35{padding-left: 35px}
+.pl40{padding-left: 40px}
+.pl45{padding-left: 45px}
+.pl50{padding-left: 50px}
+.pl55{padding-left: 55px}
+.pl70{padding-left: 70px}
+.pl75{padding-left: 75px}
+.pl90{padding-left: 90px}
+.pl96{  padding-left: 96px;}
+.pl100{padding-left: 100px}
+.pl110{padding-left: 110px}
+.pl120{padding-left: 120px;}
+.pr15{padding-right: 15px}
+.pr30{padding-right: 30px}
+.pr75{padding-right: 75px}
+.pt0{padding-top: 0}
+.pb10{padding-bottom: 10px}
+.pb15{padding-bottom: 15px}
+.pb30{padding-bottom: 30px}
+.pb35{padding-bottom: 35px}
+.pb40{padding-bottom: 40px}
+.pt10{padding-top: 10px}
+.pt15{padding-top: 15px}
+.pt30{padding-top: 30px}
+.pt35{padding-top: 35px}
+.pt40{padding-top: 40px}
+.pt45{padding-top: 45px}
+.pt60{padding-top: 60px}
+.pt80{padding-top: 80px}
+.pt85{padding-top: 85px}
+.pt110{padding-top: 110px}
+.pr10{padding-right: 10px}
+.pr20{padding-right: 20px}
+.pr35{padding-right: 35px}
+.pr45{padding-right: 45px}
+.pb10{padding-bottom: 10px}
+.pb20{padding-bottom: 20px}
+.ml10{margin-left: 10px}
+
+/*边框*/
+.border1(@c:#B8E3F){border: 1px solid @c}
+/*长宽*/
+.w10{width:10px;}
+.w20{width:20px;}
+.w30{width:30px;}
+.w40{width:40px;}
+.w50{width:50px;}
+.w60{width:60px;}
+.w70{width:70px;}
+.w80{width:80px;}
+.w85{width: 85px}
+.w90{width:90px;}
+.w100{width:100px;}
+.w120{width: 120px}
+.w130{width: 130px}
+.w150{width: 150px}
+.w200{width:200px;}
+.w220{width: 220px}
+.w260{width: 260px}
+.w300{width:300px;}
+.w400{width:400px;}
+.w500{width:500px;}
+.w600{width:600px;}
+.w700{width:700px;}
+.w800{width:800px;}
+.w820{width: 820px}
+.w1100{width: 1100px}
+.w{width:100%}
+.h20{height: 20px}
+.h30{height: 30px}
+.h35{ height: 35px;  }
+.h38{height: 38px}
+.h50{width:50px;}
+.h70{height: 70px}
+.h80{height:80px;}
+.h100{height:100px;}
+.h170{height: 170px}
+.h200{height:200px;}
+.h280{height: 280px}
+.h350{height: 350px}
+.h500{height: 500px}
+.w{width: 100%}
+.h{height: 100%}
+.h40{height: 40px}
+.h25{height: 25px}
+.w130{width: 130px}
+.w170{width: 170px}
+.w260{width: 260px}
+.w280{width: 280px}
+.w200{width: 200px}
+.h400{height: 400px}
+.w1100{width: 1100px}
+.h30{height: 30px}
+.h85{height: 85px}
+.h90{height: 90px}
+.h100{height: 100px}
+.h150{height: 150px}
+.lh85{line-height: 85px;}
+.h170{height: 170px}
+.lh25{line-height: 25px}
+.Lh35{line-height: 35px;}
+.lh150{line-height: 150%}
+.lh200{line-height: 200%}
+.title{left: 60px;top: 10px; a{.cBlack} }
+.opacity0{opacity: 0;}
+/*定位*/
+.pr{position: relative}
+.pa{position: absolute}
+.zoom{zoom:1;}
+/*动画*/
+.tra(@a:opacity,@b:0.2s,@c:ease-in){
+  transition: @a,@b,@c;
+  -webkit-transition: @a,@b,@c;
+  -o-transition: @a,@b,@c;
+  -moz-transition: @a,@b,@c;
+}
+.border-radius(@bo){
+  border-radius: @bo;
+  -o-border-radius:@bo;
+  -webkit-border-radius: @bo;
+  -moz-border-radius: @bo;
+}
+/*for IE*/
+.flIE{*float:left}
+.no-js {
+  .customerServiceOnline {
+    background: url("../img/icon/custermerService.png") no-repeat center 10px;
+    position: fixed;
+    top: 250px;
+    right: 0;
+    height: 90px;
+    width: 90px;
+    background-color: @color;
+    .mCenter;
+    .pt45;
+    .pl10;
+    z-index: 10;
+    a {
+      .colw;
+      .f16;
+      .h;
+      .w;
+      .db;
+    }
+  }
+  /*树状列表*/
+  .findTeacher:hover .changeClass {
+    opacity: 0.8;
+    width: @w200;
+    left: 260px
+  }
+  .classList {
+    z-index: 10;
+    .bW;
+    top: 20px;
+    height: @height;
+    padding-left: 0;
+    .zoom;
+    .pa;.w260;.pl0;
+  }
+  .classList:hover {
+    border-right: 2px solid @color
+  }
+  .classList li {
+    .w;
+    height: @height/6;
+    border-bottom: 1px solid #cccccc;
+    .pt20;
+  }
+  .classList a {
+    padding-left: @pl;
+    .f16;
+    color: @F;
+    .w;
+  }
+  .classList li:hover a, .classList li:hover .listSpan span {
+    .colw
+  }
+  .primarySchool {
+    .background-img("../img/icon/primarySchool.gif")
+  }
+  .primarySchool:hover {
+    .background-img("../img/icon/change/primarySchoolWhite.png", @color);
+  }
+  .juniorMiddleSchool {
+    .background-img("../img/icon/juniorMiddleSchool.gif")
+  }
+  .juniorMiddleSchool:hover {
+    .background-img("../img/icon/change/juniorMiddleSchoolWhite.png", @color)
+  }
+  .seniorHighSchool {
+    .background-img("../img/icon/seniorHighSchool.gif")
+  }
+  .seniorHighSchool:hover {
+    .background-img("../img/icon/change/seniorHighSchoolWhite.png", @color)
+  }
+  .university {
+    .background-img("../img/icon/university.gif")
+  }
+  .university:hover {
+    .background-img("../img/icon/change/universityWhite.png", @color)
+  }
+  .foreign {
+    .background-img("../img/icon/foreign.gif")
+  }
+  .foreign:hover {
+    .background-img("../img/icon/change/foreignWhite.png", @color)
+  }
+  .language {
+    .background-img("../img/icon/language.gif")
+  }
+  .language:hover {
+    .background-img("../img/icon/change/languageWhite.png", @color)
+  }
+  .listSpan {
+    left: @pl;
+    bottom: 5px
+  }
+  .listSpan span {
+    .f14;
+    color: #ABABAB
+  }
+  /*隐藏的div  用于显示具体的分类*/
+  .changeClass {
+    .zoom;
+    .bW;
+    height: @height;
+    box-sizing: border-box;
+    width: 0;
+    left: 200px;
+    z-index: 9;
+    border-left: 2px solid @color;
+    padding: @f22;
+    opacity: 0;
+    .tra(all, 0.2s, ease-in)
+  }
+  .changeClass span {
+    .f16;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 8px
+  }
+  .changeClass a {
+    color: @a7;
+  }
+  .changeClass a:hover {
+    color: @color
+  }
+  /*顶部条*/
+  .fr {
+    float: right
+  }
+
+  .top {
+    .f12;
+    .w;
+    .h35;
+  }
+  .top_right {
+    .fr;
+  }
+  .top_left {
+   min-width: 30px;
+    .fl;
+  }
+  .top a {
+    .colw;
+    .Lh35
+  }
+  .top .active {
+    .cblue
+  }
+  /*.classBtn{  background: url("../img/icon/sanjiao.fw.png") right center no-repeat;}*/
+  header{.w;.bW;}
+  /*头部主体*/
+  .headContent {
+    .w1100;
+    .mCenter;
+  }
+  .head_left {
+    .w280;
+    .h100;
+    .fl;
+    .pr;
+  }
+  .head_right {
+    background: url("../img/slogan.png") no-repeat right bottom
+  }
+  .website {
+    left: 60px;
+    .c3c;
+    .w100;
+  }
+  .city {
+    left: 190px;
+    .cBlack
+  }
+  .changeCity {
+    left: 190px;
+    top: 30px;
+    .grey
+  }
+  .searchInput {
+    width: 458px;
+    border: 1px solid #DDDDDD;
+    line-height: 35px;
+    .h35;
+    .mt30;
+    .f14;
+    .pl15;
+    .fl;
+  }
+  .searchButton {
+    .border1(@color);
+    background-color: @color;
+    .ib;
+    .h35;
+    .mt30;
+    .w80;
+    .colw;
+    .f14
+  }
+  .findTeacher {
+    background: @color url("../img/icon/find.gif") no-repeat 50px center;
+    .border1(@color);
+    .w260;
+    .h35;
+    .fl;
+    .pr;
+    .zoom;
+  }
+  .nav_list li {
+    .pl20;
+    .pr20;
+
+  }
+  html, body, .content, .searchMain {
+    background: #F3F3F3
+  }
+  body {
+    min-width: 1100px
+  }
+  .content {
+    .w;
+  }
+  /*导航条*/
+  .findTeacherButton {
+    .h;
+    .w;
+    .db;
+    .h35;
+    .Lh35;
+    .colw;
+    .f14;
+    .pl110
+  }
+  .nav_bar{
+    min-height: 35px;
+  }
+  .nav_list{
+    .m0;
+  }
+  .nav_list li{
+    .h;
+    .ib;
+    line-height: 35px;
+  }
+  .nav_list a:hover {
+    color: @color
+  }
+  /*轮播图*/
+  .banner {
+    overflow: hidden
+  }
+  /*推荐老师*/
+  /*推荐班课*/
+  .RecommendTeacher, .RecommendClass {
+    height: @l70+@l340
+  }
+  .RecommendHead {
+    height: @l70
+  }
+  .teacherList, .lessonList {
+    height: @l340;
+    vertical-align: top;
+  }
+  .Recommend_title {
+    border-bottom: 1px solid #DEDEDE;
+    .w260;
+    left: (@l1100 - 260)/2
+  }
+  .Recommend_title span {
+    height: 40px;
+    line-height: 40px;
+    width: 87px;
+    border-bottom: 2px solid @color;
+    display: block;
+    .mCenter;
+    color: @color
+  }
+
+  .teacherList_item, .lessonList_item {
+    width: @itemWidth;
+    padding-bottom: 1px;
+    .mr10;
+    .bW;
+    .pr;
+    .ib;
+    .mt30;
+    height: 315px;
+    .flIE;
+    vertical-align: top;
+  }
+  .teacherList_item img, .lessonList_item img, .searchTeacherItem img {
+    margin-bottom: 0
+  }
+  .videoHref {
+    display: block;
+    height: 178px;
+    &:hover .play {
+      opacity: 1.0
+    }
+  }
+  .play {
+    .pa;
+    left: (@itemWidth - 62 )/2;
+    top: (168px+10-62)/2;
+    opacity: 0;
+    .tra(opacity, 0.2s, ease-in)
+  }
+  .teacherName, .classData {
+    left: 10px;
+    .f20;
+    .lh200;
+    .pa;
+    .cBlack;
+    &:hover {
+      color: @age
+    }
+  }
+  /*.classData{*padding-top:160px;}*/
+  .teachingAge {
+    left: 180px;
+    .age;
+    .colw;
+    top: 10px;
+    .f14;
+    .lh150;
+    .pa;
+    .pl10;
+    .pr10
+  }
+  .intruduce, .classTime {
+    color: @c73;
+    .ml10;
+    .mr10;
+    .f14;
+    border-bottom: 1px solid #F3F3F3;
+    .pt10;
+
+  }
+  .classTime {
+    .pt45
+  }
+  .where {
+    .pa;
+    top: 315px - 50;
+  }
+  .location {
+    .h30;
+    .m10;
+    .pl30;
+    background: url("../img/icon/location.gif") no-repeat left center
+  }
+  .teacherPhoto {
+    .m10
+  }
+  .teacherData {
+    .h30;
+    .m0;
+    .pr;
+  }
+  .teachers {
+    .f15;
+    .ml10;
+    color: #ABABAB;
+    .pa;
+    left: 10px;
+    bottom: 3px
+  }
+
+  /*推荐节目*/
+  .RecommendProgram {
+    height: @l70+@l340 - 65;
+  }
+  .program_item {
+    height: @l240;
+    .bW;
+    width: @itemWidth;
+    .mt30;
+    .ib;
+    .mr10;
+    .pr;
+    .flIE
+  }
+  .RecommendProgram_item1_img {
+    width: @itemWidth
+  }
+
+  .ProgramHref {
+    .db;
+    .pr;
+    &:hover .programIntroduceBox {
+      top: 0px;
+      opacity: 0.5;
+      height: 184px;
+      width: @itemWidth;
+      left: 0
+    }
+  }
+  .programName {
+    .pa;
+    top: 194px;
+    color: @a7;
+    width: @itemWidth;
+    padding-right: 54px;
+    .m0;
+    .ml10;
+    .f16;
+    background: url("../img/icon/eye.gif") no-repeat 196px center
+  }
+  .price {
+    color: #FFB555;
+    .pa;
+    top: 200px;
+    left: @itemWidth - 40;
+    .f15
+  }
+  .programIntroduceBox {
+    height: 0;
+    width: 0;
+    .bcBlack;
+    opacity: 0;
+    .pa;
+    left: @itemWidth / 2;
+    top: -184px;
+    .tra(all, 0.3s, ease-in)
+  }
+  .introduce {
+    .colw;
+    .f14;
+    .m0;
+    .mt75;
+    .ml60;
+    .mr60;
+    .tCenter;
+  }
+  /*上课流程*/
+  .RecommendProcess {
+    height: @l70 + @l340
+  }
+  .Process_item {
+    width: @itemWidth;
+    .bW;
+    .mt30;
+    .ib;
+    .mr10;
+    vertical-align: top;
+    .flIE;
+  }
+  .Process_item1 {
+    .border-top;
+  }
+  .Process_item2 {
+    .border-top(#A1D36D)
+  }
+  .Process_item3 {
+    .border-top(#55C1E7)
+  }
+  .Process_item4 {
+    .border-top(#AB93E9)
+  }
+  .process_content {
+    .f14;
+    color: @c73;
+    .pl20;
+    .pr20;
+    .pt20;
+    min-height: 100px;
+    .mt0;
+  }
+  .Process_title {
+    .tCenter;
+    .f14;
+  }
+  footer {
+    background-color: #414145
+  }
+  .footerList {
+    .ib;
+    .w170;
+    vertical-align: top;
+    & h4 {
+      .colw;
+      .f16
+    }
+    .flIE;
+  }
+  .footerList h4 {
+    *color: #000;
+  }
+  .footer1, .footer2, .footer3, .footer4 {
+    .pl0;
+    & li a {
+      color: #A9A9A9
+    }
+  }
+  .tell {
+    .ib;
+    .h170;
+    width: @l1100 - 4 *170 - 80;
+    background: url("../img/icon/tellphone.png") no-repeat left center;
+    .pr;
+    .pl100;
+    .fr;
+  }
+  .tellNum {
+    /*left:@l1100 - 4 *170-160;*/
+    .fr;
+    padding-top: 40px;
+    .colw;
+    .f26;
+    font-family: "宋体";
+    .pa;
+    *color: #000;
+  }
+  .workTime {
+    .colw;
+    .f16; /*left:@l1100 - 4 *170-160;*/
+    .fr;
+    .pa;
+    top: 80px;
+    .w260;
+    *color: #000;
+  }
+  .bottomBox {
+    background-color: #292B2D;
+  }
+
+  /*找老师页面*/
+
+  .allKinds a {
+    color: @c65;
+    .f12
+  }
+  .classKinds {
+    height: 55px;
+    .bW;
+    line-height: 55px;
+    .pl20;
+    .f12;
+    .thisKind {
+      color: @c65;
+      .mr10;
+      .ml10;
+    }
+    .active {
+      color: @color
+    }
+    .kinds {
+      color: #2F2F2F;
+      .mr30;
+    }
+  }
+  .sorting {
+    .sortKind {
+      line-height: 40px;
+      .f12;
+      .mr45;
+      .cBlack
+    }
+    .pl25;
+    .h40;
+    .bW;
+    .active {
+      color: #FF6500
+    }
+  }
+
+  .searchTeacherItem {
+    height: @l340;
+    .bW;
+    width: @itemWidth;
+    .ib;
+    .flIE;
+    .p10;
+    .mr10;
+    .pr;
+    .mt20;
+  }
+  .searchTeacherItem img {
+  }
+  .notes {
+    color: @c73;
+    .f14;
+    .mt0;
+  }
+  .searchTeacherName {
+    .tCenter;
+    .f20;
+    .mb0;
+    .mt0;
+  }
+  .searchTeacherName a {
+    .cBlack;
+  }
+  .myLabel {
+    border-bottom: 1px solid #F3F3F3
+  }
+  .searchTeachingAge {
+    .age;
+    .colw;
+    .f14;
+    .ib;
+    .lh25;
+    .h25;
+    .pl10;
+    .pr10;
+    margin-bottom: 0;
+    .pr;
+    top: -10px;
+  }
+  .labelSpan {
+    .pr;
+    top: -10px;
+    margin-right: 10px - 6;
+    .bW;
+    line-height: 25px - 2;
+    .h25;
+    .pl10;
+    .pr10;
+    .f14;
+    .ib;
+    box-sizing: inherit;
+    vertical-align: top;
+  }
+  .sameColor(@c) {
+    color: @c;
+    border: 1px solid @c;
+  }
+  .characteristic {
+    .sameColor(@c5d);
+  }
+  .unusual {
+    .sameColor(#AACAF2);
+  }
+  .minPriceSpan {
+    .m0;
+    .pr;
+    top: -10px;
+    color: #636363;
+    line-height: 30px;
+  }
+  .money {
+    color: #FF6500;
+  }
+  .myPrice {
+    .f24;
+    color: #FF6500;
+    .pt10;
+  }
+
+  .pageNumList {
+    padding-left: @itemWidth * 2 - 50;
+    a {
+      color: #7F7F7F;
+    }
+    .pageNum {
+      .border1(#E6E6E6);
+      .pl15;
+      .pr15;
+      .f16;
+      .lh200;
+      .ib;
+      .mr10;
+    }
+    .more {
+      border: none
+    }
+    .active {
+      .colw;
+      background-color: @color;
+    }
+  }
+
+  /*app下载页面*/
+  .appContent {;
+    height: 580px;
+    background: #0C0F10 url("../img/appDownLoad/appDownloadBg.png") no-repeat;
+    background-size: cover;
+    .content {
+      .p60;
+      width: @l1100;
+      .mCenter;
+      background: none;
+      .pr;
+    }
+    .logo {
+      .ml20;
+      margin-top: 100px - 60;
+    }
+    .ZE {
+      .ml60
+    }
+  }
+  .sloganTitle {
+    .colw;
+    .f27;
+    .pa;
+    left: 263px;
+    top: 190px - 40;
+  }
+  .downLoadBox {
+    width: 251px;
+    height: 82px;
+    .m0;
+    .f22;
+    .colw;
+  }
+  .androidTitle, .iosTitle {
+    padding-top: 33px;
+    .pl50;
+    .m0;
+    & a{
+      .colw;
+    }
+  }
+  .boxBg(@bg:"../img/appDownLoad/greenBtn.png") {
+    background: url(@bg) no-repeat center center;
+    background-size: cover
+  }
+  .androidBox {
+    .boxBg("../img/appDownLoad/greenBtn.png");
+    .mt100;
+  }
+  .iosBox {
+    .boxBg("../img/appDownLoad/blueBtn.png");
+    height: 82px + 5;
+  }
+  .phoneImg {
+    .pa;
+    left: 713px - 60;
+    top: 63px;
+  }
+  .QRcode {
+    .pa;
+    left: 356px;
+    top: 350px - 15;
+  }
+  /*了解社区*/
+  .contentTop {
+    height: 300px;
+    .bW;
+    .mCenter;
+    margin-top: 40px;
+  }
+  .showBox {
+    width: @l1100 / 3 - 6;
+    border-right: 1px solid #E7E7E7;
+    .h;
+    .ib;
+    .flIE;
+  }
+  .showContent {
+    .m0;
+    .pa;
+    top: 68px;
+    .f14;
+    color: @c73;
+  }
+  .showTitle {
+    .pa;
+    top: 40px;
+    .m0;
+    .f18;
+    .fb;
+  }
+  .leftBox {
+    .up {
+      .bgImg("../img/knowAboutCommunity/lessons.gif")
+    }
+    .down {
+      .bgImg("../img/knowAboutCommunity/communication.gif")
+    }
+  }
+  .midleBox {
+    .up {
+      .bgImg("../img/knowAboutCommunity/teachers.gif")
+    }
+    .down {
+      .bgImg("../img/knowAboutCommunity/safe.gif")
+    }
+  }
+  .rightBox {
+    .up {
+      .bgImg("../img/knowAboutCommunity/Interaction.gif")
+    }
+    .down {
+      .bgImg("../img/knowAboutCommunity/play.gif")
+    }
+  }
+  .up, .down {
+    height: 150px;
+    padding-left: 120px + 5;
+    padding-top: 35px;
+    .pr;
+  }
+  .bgImg(@b) {
+    background: url(@b) no-repeat 45px 40px
+  }
+  .teacherOrStudent {
+    padding-top: 110px;
+    height: 740px - 1;
+    .w1100;
+    .mCenter;
+    background: url("../img/knowAboutCommunity/teacherOrStudent.gif") no-repeat center top;
+    .mt40;
+  }
+  .teacherOrStudentContent {
+    .pr;
+    .w;
+    height: 740px - 112px;
+    background: url("../img/knowAboutCommunity/midBg.gif") center 80px no-repeat;
+    .bW
+  }
+  .introduceContent {
+    width: (@l1100 - 200)/2;
+    .h;
+  }
+  .introduceTitle {
+    .f24;
+    margin-bottom: 28px
+  }
+  .contentLeft {
+    .fl;
+    .pl75;
+    .introduceTitle {
+      padding-left: 208px - 75
+    }
+  }
+  .contentRight {
+    .fr;
+    .pr75;
+    .introduceTitle {
+      padding-left: 195px
+    }
+  }
+  .mainContent {
+    height: (740px  )/5 - 150;
+  }
+  .mTitle {
+    .f18;
+    .cBlack;
+    .fb;
+    .cb;
+    margin-top: 25px + 15;
+  }
+  .mTitleLeft {
+    .tr;
+    .cb
+  }
+  .mTitleRight {
+    .tl;
+  }
+  .mContent {
+    .mt0;
+    .f14;
+    color: @c73;
+  }
+  .mContentRight {
+    .tl;
+  }
+  .mContentLeft {
+    .tr;
+  }
+  /*家长还是老师*/
+  .teacherOrStudentSecond {
+    height: 593px;
+    .w1100;
+    .pt60;
+    background: url("../img/knowAboutCommunity/ToS.gif") no-repeat center top;
+    .mCenter;
+    .mb200;
+  }
+  .TeacherShowBox {
+    height: 593px - 60;
+    .w;
+    background: url("../img/knowAboutCommunity/ToSmidBg.gif") no-repeat center 85px;
+    .bW;
+  }
+  .teacherShowMain {
+    width: (@l1100 - 200) /2;
+    padding-top: 75px;
+  }
+  .teacherShowBoxRight {
+    .fl;
+    .tr;
+    .pl75;
+  }
+  .teacherShowBoxLeft {
+    .fr;
+    .tr;
+    .pr75;
+    .tl;
+  }
+  .M {
+    height: (593px - 60 - 75 - 170 )/4
+  }
+
+  /*老师入驻页面*/
+  /*现在加入我们*/
+  .joinUsNow {
+    .w1100;
+    .h200;
+    .bW;
+    .mCenter;
+    .mt40;
+    .pt35;
+    .pb35;
+    .mb40;
+  }
+  .nowBox {
+    .pl90;
+    p {
+      .m0;
+      color: @F
+    }
+    .now {
+      .f26;
+      font-family: "黑体"
+    }
+    .becomeTeacher {
+      .f26;
+    }
+    .letYou {
+      .f22;
+    }
+  }
+  .joinLeft {
+    border-right: 1px solid #F3F3F3;
+    width: 30%;
+    .h;
+    .ib;
+  }
+  .joinRight {
+    .pl70;
+    .ib;
+    .h;
+    width: 60%;
+    .f16;
+    .fb;
+  }
+  /*谁能成为老师*/
+  .whoCanBecameTeacher {
+    .w1100;
+    .bW;
+    .mCenter;
+    .pt30;
+    .mb40;
+  }
+  .becomeTeacher_title {
+    .tCenter;
+    .m0;
+    .f24;
+    color: @F;
+  }
+  .becomeTeacherBox {
+    width: @l1100/3-5;
+    .pt30;
+    .tCenter;
+    .ib;
+    .mCenter;
+  }
+  .teacherKind {
+    .f16;
+    color: @c73;
+  }
+  /*老师入驻的流程*/
+  .technologicalProcess {
+    .h350;
+    .w1100;
+    .mCenter;
+    background: url("../img/teacherJoinUs/comeInBg.gif") center 85px no-repeat;
+    .bW;
+    .mb40;
+    .pl55;
+    .pt20;
+  }
+  .technologicalProcess_title {
+    .f24;
+    .cBlack;
+    .ib;
+  }
+  .technologicalProcess_button {
+    .w120;
+    .h35;
+    color: @color;
+    border: 1px solid @color;
+    .bW;
+    .ml30;
+  }
+  .youCanBegin {
+    margin-top: 200px + 10;
+    .f14;
+    color: @c73;
+  }
+  .howYouCanPlay {
+    height: 212px;
+    .w1100;
+    .mCenter;
+    .bW;
+    margin-bottom: 135px;
+    padding-left: 135px;
+    .pr;
+    vertical-align: top
+  }
+  .playLeft {
+    .w280;
+    .ib;
+    .pa;
+    top: 37px;
+  }
+  .play_title {
+    .tCenter;
+    .f24;
+    .cBlack;
+    .mb30;
+  }
+  .play_content {
+    .f14;
+    color: @c73;
+  }
+  .or {
+    font-size: 48px;
+    font-family: "Adobe 黑体 Std";
+    color: #C3C1C1;
+    padding-top: 35px + 45;
+    .pa;
+    padding-left: 132px + 200;
+  }
+  .playRight {
+    .w400;
+    .ib;
+    margin-left: 224px;
+    .pa;
+    top: 37px;
+    left: 400px;
+  }
+  /*老师主页*/
+  /*头部*/
+  .teacherHomePageBigPic {
+    .w;
+    .pr;
+  }
+  .thisTeacherData {
+    .pa;
+    left: 40%;
+    top: 10%;
+    .colw;
+    .tCenter;
+  }
+  .headPic{
+    .db;
+    .mCenter;
+  }
+  .thisTeacherName{
+    .homePage_girl;
+    .ib;
+    min-width: 39%;
+    .pr30;
+  }
+  .askThisTeacherBtn {
+    .f20;
+    width: 140px;
+    height: 48px;
+    background-color: #FFB143;
+    .colw;
+    border: none;
+  }
+  .headPic {
+    .border-radius(50%)
+  }
+  .thisTab {
+    width: 143px - 50;
+    .tCenter;
+    .f14;
+    .mr45;
+  }
+  .teacherHomePageMain {
+    .w1100;
+    .mCenter;
+    .bW;
+  }
+  /*老师主页切换面板*/
+  .homePageList {
+    padding-left: 140px;
+    .mt30;
+    .w;
+    .h40;
+  }
+
+  #myTab {
+    border: none;
+    a {
+      .cBlack;
+      .pl10;
+      .pr10;
+    }
+    .active a {
+      color: @color;
+      border: none;
+      border-bottom: 2px solid @color
+    }
+  }
+  #myTabContent {
+    background: #F3F3F3;
+    .pt20;
+    margin-bottom: 330px;
+  }
+  /*面板首页*/
+  .homeLeft {
+    .w400;
+    .ib;
+    .mr20;
+    vertical-align: top;
+  }
+  .HomePageComments {
+    height: 420px;
+    .pl20;
+    .pr20;
+    .bW;
+    .w
+  }
+  .border-bottom1px(@c:#E7E7E7) {
+    border-bottom: 1px solid @c;
+  }
+  .HomePageCommentsName {
+    .w;
+    .h40;
+    .border-bottom1px;
+  }
+  .HomePageTeacherName {
+    color: @F;
+    .mt0;
+    line-height: 40px
+  }
+  .numberOfComments {
+    color: #ABABAB;
+  }
+  .HomePageCommentsMain {
+    .h280;
+    .w;
+    .border-bottom1px;
+  }
+  .HomePageCommentsBottom {
+    height: 420px - 40 - 280;
+    .myLabel {
+      border-bottom: none;
+      .mb0;
+    }
+  }
+  .homeRight {
+    width: @l1100 - 400 - 20 - 5; /*.bW;*/
+    .ib;
+  }
+  .lessonWay {
+    .mr10;
+  }
+  .labelIcon {
+    .mr10;
+  }
+  #lessonTapList {
+    .mt0;
+    border: none;
+    li {
+      border: none
+    }
+    a {
+      color: #8D8D8D;
+      .f14;
+    }
+    .active a {
+      border: none;
+      color: @color;
+    }
+  }
+  .allLessons {
+    .bW;
+    .w;
+    .pr20;
+    .pl20;
+    .mb20;
+  }
+  .lessonTabItem {
+    border-top: 1px solid #DDDDDD;
+    .h150;
+    .pr;
+    .bW;
+  }
+  .lessonImgBox {
+    .ib;
+    .h;
+    .pt20;
+    .pa;
+  }
+  .lessonContentBox {
+    width: 470px;
+    .ib;
+    height: 113px;
+    .pa;
+    .h;
+    left: 160px;
+    .pt30;
+    vertical-align: top;
+  }
+  .lessonTitle {
+    .f16;
+    color: @F;
+    .mt0;
+    .mb25;
+  }
+  .lessonData {
+    .f14;
+    color: #8D8D8D;
+  }
+  .lessonLength, .beginTime, .theLessonWay {
+    color: #565656
+  }
+  .baoMin {
+    .pa;
+    background-color: #FF6500;
+    .colw;
+    border: none;
+    left: 425px;
+    top: 65%;
+    .f16;
+  }
+  .lessonPrice {
+    color: #FF6500;
+    .pa;
+    .f22;
+    font-family: "Adobe 黑体 Std";
+    left: 425px + 100;
+    top: 40px;
+  }
+  /*老师主页节目列表*/
+  .allPrograms {
+    .w;
+    .bW;
+    .pr20;
+    .pl20;
+    .mb20;
+    color: @F;
+    .f14;
+  }
+  .allPrograms_head {
+    .h40;
+  }
+  .allProgramsList {
+    .w;
+  }
+  .allPrograms_title {
+    .f14;
+    color: #333333;
+    line-height: 40px;
+  }
+  .allProgramsItem {
+   min-height: 150px;
+    border-top: 1px solid #E7E7E7;
+  }
+  .itemTitle {
+    .f18;
+  }
+  .ProgramContent {
+    width: 470px;
+    .h;
+    .ib;
+    .ml140;
+    .pl30;
+  }
+  .programItemData {
+    .f16
+  }
+  .ProgramItemSlogan {
+    color: @c73
+  }
+  .ProgramItemTeacherName {
+    .ml40;
+  }
+  /*教学成果 过往经历等模块的模板*/
+  .teacherPast {
+    .pr20;
+    .pl20;
+    .bW;
+    .f16;
+    .pb20;
+    .mb20;
+  }
+  .teacherPast_head {
+    .h40;
+    border-bottom: 1px solid #E7E7E7;
+  }
+  .ItemHeadTitle {
+    .mb0;
+  }
+  .pastItemContent {
+    color: @c73;
+    .mt10;
+    .mb20;
+  }
+  .pastMore {
+    color: @color;
+    .f16;
+  }
+
+  .teachAdress {
+    color: @F;
+  }
+  //主页- 常用教学地点 地图模块
+  .thisPlace {
+    .w;
+    .h200;
+  }
+  .teacherPastFooter {
+    .pt20;
+  }
+
+  /* 主页-照片、视频版块*/
+  .allPic {
+    .pr;
+    .pb40;
+  }
+  .theNumberOfPic {
+    color: #ABABAB
+  }
+  .pictureShowMain {
+    border-top: 1px solid #E7E7E7;
+  }
+  .bigPicBox {
+    .pt10;
+    .w;
+    .pb20;
+  }
+  .bigPic {
+    .w;
+  }
+
+  .picListBox {
+    height: 114px;
+    .bW;
+    .pl20;
+    .pr20;
+    overflow: hidden;
+    .pr;
+  }
+  .PicList {
+    .h;
+    width: @l1100;
+    left: -@l1100 / 4;
+    .pa;
+  }
+  .teacherPicItemHref {
+    .mr20;
+    .ib;
+  }
+  .teacherPicItem {
+    height: 114px;
+    width: 114px
+  }
+  .prevButton {
+    .w40;
+    .h80;
+    .ib;
+    .pa;
+  }
+  .preSpan {
+    .h;
+    .w;
+    .db;
+  }
+  .moreContent {
+    border-top: 1px solid #E7E7E7;
+    .pb20;
+  }
+  .moreContentIntroduce {
+    color: #333333
+  }
+  .moreContent_img {
+    .w;
+  }
+
+  /*主页-评论面板*/
+  #commentsList, #commentsList2, #commentsList3 {
+    .mt0;
+    border: none;
+    li {
+      border: none
+    }
+    a {
+      color: #8D8D8D;
+      .f14;
+    }
+    .active a {
+      border: none;
+      color: @color;
+    }
+  }
+  #commentsList2 {
+    .mt20;
+  }
+  .commtentContentItemList {
+  }
+  .commtentItem {
+    border-top: 1px solid #E7E7E7;
+    vertical-align: top;
+    .pr;
+  }
+  .com_lessonName {
+    left: 0px;
+    .pr;
+  }
+  .com_date {
+    left: 70%;
+    .pr;
+  }
+  .com_date2 {
+    left: 82%
+  }
+  .commtentItemLeft {
+    width: 80px;
+    .ib;
+    vertical-align: top
+  }
+  .commtentItemRight {
+    .ib;
+    width: 635px - 90;
+    vertical-align: top;
+    .pr;
+  }
+  .commtentItemRight2 {
+    width: @l1100 - (90*2)
+  }
+  .comHeadPicImgBox {
+    .mt20;
+    .ib;
+    width: 61px;
+  }
+  .comHeadPic {
+    .border-radius(50%)
+  }
+  .userCom {
+    .ib;
+    vertical-align: top;
+    .mt20;
+    .pr35;
+  }
+
+  .userComContent {
+    .pr;
+    top: -20px;
+  }
+  .userComFooter {
+    .pr;
+    top: -25px;
+    color: #ABABAB;
+  }
+  .smile {
+    background: url("../img/icon/smile.gif") no-repeat right center
+  }
+  .unSmile {
+    background: url("../img/icon/unSmile.gif") no-repeat right center
+  }
+  .ComUserName {
+    .f12;
+  }
+  /*主页-课程面板*/
+  .homePagePane_allLessons {
+    .bW;
+    .pl20;
+    .pr20;
+  }
+  #lessonPaneList {
+    .mt0;
+    border: none;
+    li {
+      border: none
+    }
+    a {
+      color: #8D8D8D;
+      .f14;
+    }
+    .active a {
+      border: none;
+      color: @color;
+    }
+  }
+  #lessonPaneListContent {
+    border-top: 1px solid #DDDDDD;
+    .pt20;
+  }
+  .homePage_onlineLessonItem {
+    width: (@l1100 - 40 - 40 - 10)/3;
+    height: 432px;
+    .ib;
+    .mr20;
+    .border1(#E8E8E8);
+    vertical-align: top
+  }
+  .last {
+    .mr0;
+  }
+  .homePage_onlineLessonItem_title {
+    .pl20;
+  }
+  .content_p {
+    .pl20;
+    .m0;
+  }
+  .span_name {
+    color: #8D8D8D;
+  }
+  .reg_btn {
+    background-color: @o;
+    .colw;
+    .ml20;
+    .border-radius(0px);
+    font-family: "微软雅黑";
+  }
+  .reg_over {
+    background-color: #8D8D8D;
+    .w200;
+  }
+  .price_span {
+    color: @o;
+    .ib;
+    .m0;
+    vertical-align: middle;
+    .ml30;
+  }
+  .allLessons_bom {
+    .mb0;
+    .w;
+    .ib;
+  }
+  .oneToOneLessonTitle {
+    min-width: 30%;
+    .ib;
+  }
+  .canBeginLesson {
+    .w;
+    thead {
+      color: #8D8D8D;
+    }
+    th, td {
+      height: 60px;
+      width: 100% / 7;
+      .tCenter
+    }
+    td:hover {
+      background-color: #61DD85;
+      .colw;
+    }
+  }
+  .canBeginLessonHead {
+    border-top: 8px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    .pb10;
+  }
+  .tableActive {
+    background-color: #F2F2F2;
+  }
+  .text-success {
+    color: #61DD85
+  }
+  .green {
+    background-color: #61DD85;
+    .ib;
+    .h20;
+    .w20;
+    .border-radius(50%)
+  }
+  .black {
+    background-color: @F;
+  }
+  .canBox {
+    vertical-align: top;
+    .h20;
+  }
+  .canOrCant {
+    line-height: 20px;
+    .ib;
+    .h;
+  }
+  /*主页-所有评论页面*/
+  .allComment {
+    .bW;
+    .pl20;
+    .pr20;
+  }
+
+  /*搜索老师页面*/
+  .searchHead {
+    .w1100;
+    .mCenter;
+  }
+  .numberList2 {
+    .pl0;
+    .pb20;
+  }
+  .numberList3 {
+    padding-left: 88px;
+    .pb30;
+  }
+  /*用户中心页面*/
+  .userBox {
+    .mt20;
+    .w1100;
+    .mCenter;
+  }
+  .userContentSidebar {
+    .w260;
+    .ib;
+  }
+  .userContentList {
+    .m0;
+    .pl0;
+    .bW;
+    li {
+      min-height: 45px;
+      line-height: 45px;
+    }
+    .active {
+      border-left: 5px solid @color;
+    }
+    .thisOne {
+      border-bottom: 1px solid #E7E7E7;
+      .pl30;
+    }
+  }
+  .secondList {
+    .mt0;
+    border-bottom: 1px solid #E7E7E7;
+    li {
+      .pl10;
+      list-style: disc inside;
+      color: #dddddd;
+      text-align: left;
+    }
+    .active {
+      color: @color;
+      border: none;
+    }
+    a {
+      color: #969696;
+      .active {
+        color: @color;
+        border: none
+      }
+    }
+  }
+  .userCenterMain {
+    .ml20;
+    width: @l1100 - 25 - 260;
+    min-height: 30px;
+    .ib;
+    vertical-align: top;
+  }
+  .ScheduleBox{
+    .w;
+    height: 487px;
+    .bW;
+    .mb20;
+    .pl20;
+    .pr20;
+    .f14;
+  }
+  .ScheduleHead{
+    .w;
+  border-bottom: 1px solid #E7E7E7;
+    .h40;
+    line-height: 40px;
+  }
+  .ScheduleTitle{
+    .pr75;
+  }
+  .ScheduleTable{
+    thead {
+      border-bottom: 1px solid #EBC36B;
+      th{
+        .h40;
+        .w80;
+        .tCenter;
+      }
+    }
+    tbody{
+     td{
+       border-left: 1px solid #EBC36B;
+       border-top: 1px solid #EBC36B;
+     }
+    }
+  }
+  .lessonSpan{
+    .pr20;
+  }
+  .allLessonList {
+    .w;
+  }
+  .thisLesson {
+    .mb20;
+    .bW;
+  }
+  .thisLessonHead {
+    .h40;
+    .pl20;
+    line-height: 40px;
+    border-bottom: 1px solid #E7E7E7;
+    .text-warning {
+      color: #FF6500;
+    }
+    .text-info {
+      color: @color
+    }
+  }
+  .thisLessonHea_right {
+    .fr;
+    color: #ABABAB;
+    .pr20;
+  }
+  .thisLesson_teacherName {
+    .pl20;
+    padding-right: 45px;
+    .ib;
+    background: url("../img/icon/message.gif") no-repeat right center
+  }
+  .lessonMain {
+    .pl20;
+    .pr20;
+    .w;
+    min-height: 110px;
+  }
+  .lessonLeft {
+    width: 60%;
+    .lh150;
+    .ib;
+  }
+  .lessonRight {
+    width: 30%;
+    .ib;
+    vertical-align: top;
+    margin-left: 9%;
+  }
+  .canNotBtn {
+    .ib;
+    .w150;
+    .h35;
+    .bW;
+    border: 1px solid #8D8D8D;
+    color: #8D8D8D;
+  }
+  .canBtn {
+    background-color: #FF6500;
+    .colw;
+    font-family: "微软雅黑";
+    .w150;
+  }
+  .btn-info {
+    background: @color
+  }
+  .infoBtn {
+    .bW;
+    .border1(@color);
+    color: @color;
+    .w150;
+    .mt10;
+  }
+  .btn {
+    font-family: "微软雅黑", "宋体"
+  }
+  .thisLessonContent {
+    .pb10;
+  }
+
+  /*登陆页面*/
+  .loginBox {
+    width: 763px;
+    .h350;
+    .bW;
+    .mCenter;
+
+    margin-bottom: 300px;
+    .border-radius(10px);
+  }
+  .loginHead {
+    height: 110px;
+    .w;
+    background: url("../img/login/loginBox_bg.gif") no-repeat center 20px;
+    .pt20;
+  }
+  .loginTitle {
+    .tCenter;
+    margin-top: 65px;
+    color: @F
+  }
+  .loginMain {
+    height: 230px;
+    .w;
+    .pt30;
+  }
+  .loginMain_left {
+    width: 50%;
+    height: 90%;
+    border-right: 1px solid #D0D0D0;
+    .pl120;
+    .pr;
+    .ib;
+  }
+  .loginMain_right {
+    width: 49%;
+    .ib;
+    vertical-align: top;
+    .pl30;
+  }
+  .have_no {
+    color: #8D8D8D;
+    .mb0;
+  }
+  .login_Input {
+    .h35;
+    width: 180px;
+    .ib;
+    .border1(#CED6DC)
+  }
+  .label_login {
+    .ib;
+    width: 47px;
+    .h35;
+    .border1(#CED6DC);
+    border-right: none;
+    left: 73px;
+    .pa;
+  }
+  .label_userId {
+    background: url("../img/login/user_id.png") no-repeat center center;
+  }
+;
+  .userId {
+    .pa;
+  }
+  .password {
+    .pa;
+    top: 55px;
+  }
+  .label_password {
+    top: 55px;
+    background: url("../img/login/password.png") no-repeat center center
+  }
+  .login_bg {
+    background: url("../img/login/login_bg.png") no-repeat;
+    background-size: cover;
+  }
+  .rememberBox {
+    .pa;
+    .f12;
+    top: 55px + 35;
+    color: #7D8D99;
+    left: 70px;
+    input {
+      height: 12px;
+      width: 12px;
+      .bW;
+    }
+    label {
+      /*line-height: 20px;height: 20px;*/
+      vertical-align: middle;
+    }
+  }
+  .forget {
+    color: #7D8D99;
+    .pa;
+    top: 100px;
+    left: 215px;
+    .f12;
+  }
+  .asThis {
+    .f12;
+    color: #8D8D8D;
+  }
+  .otherLogin {
+    .ib;
+  }
+  .regLink {
+    margin-top: 5px;
+  }
+
+  .loginBtn2 {
+    .pa;
+    top: 130px;
+    width: 230px;
+    left: 70px;
+  }
+  /*注册页面*/
+  .regBox {
+  /*  min-height: 550px;*/
+    width: 734px;
+    .bW;
+    .mCenter;
+    margin-bottom: 300px;
+    margin-top: 130px;
+    .border-radius(10px)
+  }
+  .regBox_Head {
+    min-height: 110px;
+    .w;
+    background: url("../img/login/loginBox_bg.gif") no-repeat center 20px;
+    .pt80;
+  }
+  .regTitle {
+    .mt0;
+  }
+  .regMain {
+    width: 50%;
+    .mCenter;
+    /*min-height: 550px - 110px;*/
+    .pb20;
+  }
+  .xieyi {
+    .f12;
+    color: #8D8D8D;
+  }
+  .regForm {
+    label {
+      color: #8D8D8D;
+    }
+  }
+  .regAs {
+    padding-left: 96px;
+  }
+  /*老师主页-个人资料*/
+  .teacherDataBox {
+    .w;
+  }
+  .teacherDataHead {
+    .h90;
+    .w;
+    .bW;
+    .pl20;
+    .pr20;
+  }
+  .teacherData_name {
+    .f18;
+    .pr30;
+    line-height: 90px;
+    .homePage_girl;
+  }
+  .homePage_teachingAge{
+    background-color: @age;
+    .colw;
+    .ib;
+    .ml30;
+    .pl10;
+    .pr10;
+    .lh150;
+  }
+  .homePage_girl{
+    background: url("../img/teacherHomePage/girl.png")  right center no-repeat;
+  }
+  .teacher_allPast_head{
+    .pl20;
+    line-height: 50px;
+  }
+  .teacherDataMain{
+    .mt20;
+    .lh150;
+  }
+  .teacherData_allPastBox{
+    .pb20;
+    .pr45;
+    .bW;
+  }
+  .teacherData_allPastBox{
+    .mb20;
+  }
+  .teacher_allPast_Content{
+    .ml45;
+    border-left: 5px solid #E5E5E5;
+    .pt10;
+  }
+  .past_date{
+    .pl20;
+  }
+  .teacher_allPast_item{
+    .pb30;
+  }
+  .past_item_content{
+    .pl20;
+    color: #737373;
+  }
+  .btn-danger:hover{
+    background-color: #d9534f;
+  }
+  .btn-warning:hover{
+    background-color: #f0ad4e;
+  }
+  .customerServiceOnline{
+    display:none;
+  }
+
+}
