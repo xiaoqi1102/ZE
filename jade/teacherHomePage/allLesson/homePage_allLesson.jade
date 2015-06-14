@@ -1,0 +1,26 @@
+//主页-全部课程
+div.homePagePane_allLessons
+   ul(role="tablist")#lessonPaneList.nav.nav-tabs
+      -var Lp=[{href:"homePageLessonOnLine",title:"在线直播"},{href:"homePageLessonDownLine",title:"线下课程"},{href:"homePageLessonOneOnOne",title:"1对1课程"}]
+      -for(var bbb=0;bbb<Lp.length;bbb++)
+         case bbb
+            when 0
+               li.active
+                  a(href="#"+Lp[bbb].href role="tab" data-toggle="tab") #{Lp[bbb].title}
+            when 1
+               li
+                  a(href="#"+Lp[bbb].href role="tab" data-toggle="tab") #{Lp[bbb].title}
+            when 2
+               li
+                  a(href="#"+Lp[bbb].href role="tab" data-toggle="tab") #{Lp[bbb].title}
+   div#lessonPaneListContent.tab-content
+      -var Lp=[{href:"homePageLessonOnLine",title:"在线直播"},{href:"homePageLessonDownLine",title:"线下课程"},{href:"homePageLessonOneOnOne",title:"1对1课程"}]
+      -for(var ccc=0;ccc<Lp.length;ccc++)
+         case ccc
+            when 0
+               include homepage_allLesson_onlineLesson
+            when 1
+               include homepage_allLesson_downlineLesson
+            when 2
+               include homepage_allLesson_oneTooneLesson
+   include homePage_allLesson_comment

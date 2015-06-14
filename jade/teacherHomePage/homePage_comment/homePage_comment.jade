@@ -1,0 +1,111 @@
+ul#commentsList3.nav.nav-tabs(role="tablist")
+    -var com=[{href:"all3",title:"全部"},{href:"good3",title:"好评"},{href:"bad3",title:"差评"}]
+    -for(var c = 0 ; c <com.length;c++)
+       case c
+           when 0
+               li.active
+                   a(href="#" + com[c].href role="tab" data-toggle="tab") #{com[c].title}
+           when 1
+               li
+                   a(href="#" + com[c].href role="tab" data-toggle="tab") #{com[c].title}
+           when 2
+               li
+                   a(href="#" + com[c].href role="tab" data-toggle="tab") #{com[c].title}
+div#commentsContent3.tab-content
+    -var com=[{href:"all3",title:"全部"},{href:"good3",title:"好评"},{href:"bad3",title:"差评"}]
+    -for(var aa=0;aa<com.length;aa++)
+       case aa
+           when 0
+               div(id=com[aa].href).tab-pane.fade.in.active
+                   //主页-所有课程-全部评论面板
+                   div.commtentContentItemList
+                       div.commtentItem
+                           div.commtentItemLeft
+                               div.comHeadPicImgBox
+                                   img.comHeadPic(src="img/teacherHomePage/userHeadPic.gif")
+                           div.commtentItemRight.commtentItemRight2
+                               div.userCom.smile
+                                   p.ComUserName 萧潇
+                               div.userComContent
+                                   p.
+                                       之前考过托福，但是听力一直是障碍，总是徘徊在20分左右，但是在老师的结构上学会了
+                                       该听什么，不该听什么。再辅助以老师的听力词汇分数大概提升到了4到5分，之后老师的
+                                       听力的选项分析帮助我在结构不清晰的时候选对正确选项。最后考出了接近满分的成绩，
+                                       学习老师。非常感谢！
+                               div.userComFooter
+                                   span.com_lessonName 初一英语
+                                   span.com_date.com_date2 2015-03-25
+                       div.commtentItem
+                           div.commtentItemLeft
+                               div.comHeadPicImgBox
+                                   img.comHeadPic(src="img/teacherHomePage/userHeadPic.gif")
+                           div.commtentItemRight.commtentItemRight2
+                               div.userCom.unSmile
+                                   p.ComUserName 萧潇
+                               div.userComContent
+                                   p.
+                                       之前考过托福，但是听力一直是障碍，总是徘徊在20分左右，但是在老师的结构上学会了
+                                       该听什么，不该听什么。再辅助以老师的听力词汇分数大概提升到了4到5分，之后老师的
+                                       听力的选项分析帮助我在结构不清晰的时候选对正确选项。最后考出了接近满分的成绩，
+                                       学习老师。非常感谢！
+                               div.userComFooter
+                                   span.com_lessonName 初一英语
+                                   span.com_date.com_date2 2015-03-25
+                   p.pageNumList.numberList3
+                       span
+                           a(href="##").pageNum.prevPage 上一页
+                       span
+                           a(href="##").pageNum.nextPage 下一页
+                       -for(var ii = 1 ; ii <6 ; ii ++)
+                           if(ii == 5 )
+                               span
+                                   a(href="##").pageNum.active #{ii}
+                           else
+                               span
+                                   a(href="##").pageNum #{ii}
+                       span
+                           a(href="##").pageNum.more ...
+                       span
+                           a(href="##").pageNum 30
+                       span
+                           a(href="##").pageNum.lastPage 尾页
+           when 1
+               div(id=com[aa].href).tab-pane.fade
+                   //主页-所有课程-好评面板
+                   div.commtentContentItemList
+                       div.commtentItem
+                           div.commtentItemLeft
+                               div.comHeadPicImgBox
+                                   img.comHeadPic(src="img/teacherHomePage/userHeadPic.gif")
+                           div.commtentItemRight.commtentItemRight2
+                               div.userCom.smile
+                                   p.ComUserName 萧潇
+                               div.userComContent
+                                   p.
+                                       之前考过托福，但是听力一直是障碍，总是徘徊在20分左右，但是在老师的结构上学会了
+                                       该听什么，不该听什么。再辅助以老师的听力词汇分数大概提升到了4到5分，之后老师的
+                                       听力的选项分析帮助我在结构不清晰的时候选对正确选项。最后考出了接近满分的成绩，
+                                       学习老师。非常感谢！
+                               div.userComFooter
+                                   span.com_lessonName 初一英语
+                                   span.com_date.com_date2 2015-03-25
+           when 2
+               div(id=com[aa].href).tab-pane.fade
+                   //主页-所有课程-差评面板
+                   div.commtentContentItemList
+                       div.commtentItem
+                           div.commtentItemLeft
+                               div.comHeadPicImgBox
+                                   img.comHeadPic(src="img/teacherHomePage/userHeadPic.gif")
+                           div.commtentItemRight.commtentItemRight2
+                               div.userCom.unSmile
+                                   p.ComUserName 萧潇
+                               div.userComContent
+                                   p.
+                                       之前考过托福，但是听力一直是障碍，总是徘徊在20分左右，但是在老师的结构上学会了
+                                       该听什么，不该听什么。再辅助以老师的听力词汇分数大概提升到了4到5分，之后老师的
+                                       听力的选项分析帮助我在结构不清晰的时候选对正确选项。最后考出了接近满分的成绩，
+                                       学习老师。非常感谢！
+                               div.userComFooter
+                                   span.com_lessonName 初一英语
+                                   span.com_date.com_date2 2015-03-25

@@ -1,0 +1,82 @@
+header
+    div.customerServiceOnline
+      a(href="##") 在线客服
+    div.top.baCo
+        div.w1100.mCenter
+            div.top_left
+                a(href="login.html").active.loginBtn 请登录
+                a.active.hidden 小齐
+                a.ml30.hidden 退出
+                a(href="javascript:;").resBtn.ml35 免费注册
+            div.top_right
+                a(href="index.html").pr35  掌中英语首页
+                a(href="usercenter.html").pr10.classBtn  我的课表
+                //a(href="javascript:;").pl30  联系客服
+    div.headContent.clearfix
+        div.head_left
+            img(src="img/logo.gif").w50.pt25.fl
+            p.pt40.website.pa zzenglish.net
+            h1.f24.title.pa
+                a(href='index.html') 掌中英语
+            p.city.pa.fb 广州
+            p.changeCity.pa 切换城市
+        //头部搜索框
+        div.head_right.h100.w820.fr
+            div.head_search.pr
+                form(anction="search.jsp")
+                    input.searchInput(placeholder="搜索您感兴趣的老师")
+                    button#searchButton.searchButton(type="submit") 搜索
+        //内容区
+         //顶部导航条
+    div.w1100.mCenter
+        div.findTeacher
+            a.findTeacherButton 找老师
+            ul.classList.none
+                li#primarySchool.primarySchool.pr
+                    a 小学
+                    p.pa.listSpan
+                        -var prs=["小一","小二","小三"]
+                        -each  pr in prs
+                           span #{pr}、
+                li#juniorMiddleSchool.juniorMiddleSchool.pr
+                    a 初中
+                    p.pa.listSpan
+                        -var prs=["初一","初二","初三"]
+                        -each  pr in prs
+                           span #{pr}、
+                li#seniorHighSchool.seniorHighSchool.pr
+                    a 高中
+                    p.pa.listSpan
+                        -var prs=["高一","高二","高三"]
+                        -each pr in prs
+                           span #{pr}、
+                li#university.university.pr
+                    a 大学
+                    p.pa.listSpan
+                        -var prs = ["四级","六级","考研"]
+                        -each pr in prs
+                           span #{pr}、
+                li#foreign.foreign.pr
+                    a 出国留学
+                    p.pa.listSpan
+                        -var foreign = ["托福","雅思","GRE"]
+                        -each f in foreign
+                           span #{f}、
+                li#language.language.pr
+                    a 语言培训
+                    p.pa.listSpan
+                        -var train= ["零基础","口语","BEC"]
+                        -each t in train
+                           span #{t}、
+                //隐藏的列表
+            div#changeClass.changeClass.pa.none
+                -var cl= ["小一","小二","小三","小四","小五","小六"]
+                -each c in cl
+                   span
+                       a #{c}、
+        -var nav=[{title:"首页",href:"index.html"},{title:"了解社区",href:"knowaboutcommunity.html"},{title:"老师入驻",href:"teacherJoinUs.html"},{title:"下载app",href:"appdownload.html"}]
+        div.nav_bar
+            ul.nav_list.bgW
+                -for(var i = 0 ; i <nav.length; i++)
+                   li
+                       a.bgW.f14.w85.ib.tc.cBlack(href=nav[i].href) #{nav[i].title}

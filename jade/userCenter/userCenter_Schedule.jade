@@ -1,0 +1,17 @@
+div.ScheduleBox
+    div.ScheduleHead
+        span.ScheduleTitle 我的课表
+        span.lessonSpan 全部(2)
+        span.lessonSpan 确认约课(2)
+        span.lessonSpan 待上课(3)
+        span.lessonSpan 已上课(0)
+    div.ScheduleMain
+        table.ScheduleTable
+            thead
+                tr
+                    -var tbHead=["周一","周二","周三","周四","周五","周六","周日"]
+                    -each t in tbHead
+                        th #{t}
+            tbody
+                tr
+                    td

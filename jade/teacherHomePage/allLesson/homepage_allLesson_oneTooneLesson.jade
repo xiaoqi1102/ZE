@@ -1,0 +1,53 @@
+div(id=Lp[ccc].href).tab-pane.fade
+    div.homepage_allOnLineLesson
+        div
+            -for(var dd = 0 ; dd < 3 ;dd++)
+               p.allLessons_bom
+                   span.oneToOneLessonTitle 冲刺高考满分英语GO
+                   span.oneToOneLessonTitle ￥150~250/小时
+                   span.oneToOneLessonTitle
+                        button.btn.reg_btn.btn-warning.w120 购买课程
+        hr
+        div.row.ml0
+            div.col-lg-8.col-md-8.canBeginLessonHead.clearfix
+                p
+                    span.fl 可授课时间
+                    span.fr 2015.3.09~2015.3.15
+            div.col-lg-8.col-md-8
+                table.canBeginLesson
+                    thead
+                        tr
+                            th.Monday 周一/18
+                            th.Tuesday 周二/19
+                            th.Wednesday 周三/20
+                            th.Thursday 周四/21
+                            th.Friday 周五/22
+                            th.Staturday 周六/23
+                            th.Sunday 周日/24
+                    tbody
+                        tr
+                            -for(var dd = 0 ; dd <7;dd++)
+                                -if(dd==0||dd==4||dd==7)
+                                    td.tableActive 上
+                                -else
+                                    td.text-success 上
+                        tr
+                            -for(var dd = 0 ; dd < 7 ;dd++)
+                                -if(dd==3)
+                                    td.tableActive 中
+                                -else
+                                    td.text-success 中
+                        tr
+                            -for(var dd = 0 ; dd<7 ; dd++)
+                                -if(dd==5||dd==2)
+                                     td.tableActive 下
+                                -else
+                                    td.text-success 下
+            div.col-lg-2
+                p.canBox
+                    span.green
+                    span.ml20.canOrCant 可约课
+                p.canBox
+                    span.green.black
+                    span.ml20.canOrCant 不可约课
+

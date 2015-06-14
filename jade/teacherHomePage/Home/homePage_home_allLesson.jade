@@ -1,0 +1,73 @@
+ul#lessonTapList(role="tablist").nav.nav-tabs
+    -var lessonTap=[{href:"onLineLesson",title:"在线授课"},{href:"downLineLesson",title:"线下班课"},{href:"one-on-oneLesson",title:"一对一课程"}]
+    -for(var j = 0 ; j <lessonTap.length ;j++)
+    case j
+        when 0
+            li.active
+                a(href="javascript:;" + lessonTap[j].href role="tab" data-toggle="tab") #{lessonTap[j].title}
+        when 1
+            li
+                a(href="javascript:;" + lessonTap[j].href role="tab" data-toggle="tab") #{lessonTap[j].title}
+        when 2
+            li
+                a(href="javascript:;" + lessonTap[j].href role="tab" data-toggle="tab") #{lessonTap[j].title}
+div#lessonTapContent.tab-content.lessonContentMain
+    -var lessonTap=[{href:"onLineLesson",title:"在线授课"},{href:"downLineLesson",title:"线下班课"},{href:"one-on-oneLesson",title:"一对一课程"}]
+    -for(var n= 0 ; n < lessonTap.length;n++ )
+    case n
+        when 0
+            //主页-在线授课
+            div(id=lessonTap[n].href).tab-pane.fade.in.active
+                div.lessonTabItemList
+                    -for(var p = 0 ; p < 3 ; p++)
+                    div.lessonTabItem
+                        div.lessonImgBox
+                            img(src="img/teacherHomePage/lessonTabItem.gif")
+                        div.lessonContentBox
+                            h3.lessonTitle 15年八天英语春季班报名火热进行中...
+                            p.lessonData
+                                | 课程时长：
+                                span.lessonLength 6小时 <br>
+                                | 开课时间：
+                                span.beginTime 2015.03.25 <br>
+                                | 上课方式：
+                                span.theLessonWay 在线授课 <br>
+                        button.btn.btn-danger.baoMin 还剩15个名额   立即报名
+                        span.lessonPrice ￥3100
+        when 1
+            //主页-线下班课
+            div(id=lessonTap[n].href).tab-pane.fade
+                div.lessonTabItemList
+                    -for(var p = 0 ; p < 2 ; p++)
+                    div.lessonTabItem
+                        div.lessonImgBox
+                            img(src="img/teacherHomePage/lessonTabItem.gif")
+                        div.lessonContentBox
+                            h3.lessonTitle 15年八天英语春季班报名火热进行中...
+                            p.lessonData
+                                | 课程时长：
+                                span.lessonLength 6小时 <br>
+                                | 开课时间：
+                                span.beginTime 2015.03.25 <br>
+                                | 上课方式：
+                                span.theLessonWay 线下班课 <br>
+                        button.btn.btn-danger.baoMin 还剩15个名额   立即报名
+                        span.lessonPrice ￥3100
+        when 2
+            div(id=lessonTap[n].href).tab-pane.fade
+                div.lessonTabItemList
+                -for(var p = 0 ; p < 1 ; p++)
+                div.lessonTabItem
+                    div.lessonImgBox
+                        img(src="img/teacherHomePage/lessonTabItem.gif")
+                    div.lessonContentBox
+                        h3.lessonTitle 15年八天英语春季班报名火热进行中...
+                        p.lessonData
+                            | 课程时长：
+                            span.lessonLength 6小时 <br>
+                            | 开课时间：
+                            span.beginTime 2015.03.25 <br>
+                            | 上课方式：
+                            span.theLessonWay 1对1课程 <br>
+                    button.btn.btn-danger.baoMin 还剩15个名额   立即报名
+                    span.lessonPrice ￥3100
