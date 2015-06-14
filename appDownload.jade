@@ -1,0 +1,16 @@
+extends jade/common/head
+block content
+      div.appContent
+         div.content
+            img.logo(src="img/appDownLoad/logo.png")
+            img.ZE(src="img/appDownLoad/ZE.png")
+            p.sloganTitle 最专业的英语辅导社区
+            div.downLoadBox.androidBox
+                p.androidTitle
+                 a(href="http://a.app.qq.com/o/simple.jsp?pkgname=com.zzenglish.client") 安卓版下载
+            div.downLoadBox.iosBox
+                p.iosTitle
+                    a(href="https://itunes.apple.com/cn/app/zhang-zhong-ying-yu/id659819758?l=en&mt=8") iPhone版下载
+            img.phoneImg(src="img/appDownLoad/phone.png")
+            img.QRcode(src="img/appDownLoad/QRcode.png")
+      include jade/common/footer
