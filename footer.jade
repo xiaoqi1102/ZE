@@ -1,0 +1,61 @@
+
+footer.clearfix.w
+   div.w1100.mCenter
+      div.footerList
+         h4 帮助中心
+         -var footer1=["上课流程","老是入驻","老是帮助","学生帮助"]
+         ul.footer1
+            each i in footer1
+               li
+                  a(href="javascript:;") #{i}
+      div.footerList
+         h4 服务支持
+         -var footer2=["支付方式","意见反馈","侵权投诉"]
+         ul.footer2
+            each  i in footer2
+               li
+                  a(href="javascript:;") #{i}
+      div.footerList
+         h4 关于掌中英语
+         -var footer3=[{title:"了解我们",href:"#"},{title:"联系我们",href:"#"},{title:"加入我们",href:"#"},{title:"网站条款",href:"#"},{title:"活动公告",href:"#"}]
+         ul.footer3
+            each i in footer3
+               li
+                  a(href="#{i.href}") #{i.title}
+      div.footerList
+         h4 关注我们
+         -var footer4=["官方微信","新浪微博"]
+         ul.footer4
+            each i in footer4
+               li
+                  a(href="javascript:;") #{i}
+      div.tell
+         p.tellNum 12325451254
+         p.workTime 周一至周日 8:00~23:00
+   div.bottomBox.w.h30
+   script(src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js")
+   script window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')
+   script(src="js/plugins.js")
+   script(src="js/main.js")
+   script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
+   script.
+      //轮播图函数
+      $(function () {
+         $("#slidershow").carousel({
+            interval: 3000
+         });
+         $("#slidershow a.left").click(function () {
+            $(".carousel").carousel("prev");
+         });
+         $("#slidershow a.right").click(function () {
+            $(".carousel").carousel("next");
+         });
+      });
+      var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+      (function (d, t) {
+         var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+         g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+         s.parentNode.insertBefore(g, s)
+      }(document, 'script'));
+
+   script(src="js/ajax.js")
