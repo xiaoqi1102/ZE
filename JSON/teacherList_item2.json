@@ -1,0 +1,35 @@
+[{
+  "img":"img/RecommendTeacher/halo.jpg",
+  "videoHref":"javascript:;",
+  "myHomePage":"javascript:;",
+  "name":"姜伟力",
+  "place":"山东-威海高新区",
+  "teachingAge":"5",
+  "introduction":"分享英语学习的过程所见所得，帮助学生真正爱上英语"
+},
+  {
+    "img":"img/RecommendTeacher/lei.jpg",
+    "videoHref":"javascript:;",
+    "myHomePage":"javascript:;",
+    "name":"郑雷",
+    "place":"重庆",
+    "teachingAge":"5",
+    "introduction":"深入浅出，风趣幽默"
+  },
+  {
+    "img":"img/RecommendTeacher/xiaka.jpg",
+    "videoHref":"javascript:;",
+    "myHomePage":"javascript:;",
+    "name":"黄鑫",
+    "place":"西安市",
+    "teachingAge":"4",
+    "introduction":"小咖老师教你最实用，地道的美式英语口语"
+  },{
+  "img":"img/RecommendTeacher/zhiye.jpg",
+  "videoHref":"javascript:;",
+  "myHomePage":"javascript:;",
+  "name":"张冯丽",
+  "place":"宁波市",
+  "teachingAge":"2",
+  "introduction":"希望大家在快乐中学习英语"
+}]

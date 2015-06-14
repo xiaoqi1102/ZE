@@ -1,0 +1,27 @@
+[{
+  "img":"img/RecommendProgram/RecommendProgram_item1.png",
+  "videoHref":"javascript:;",
+  "programName":"英语天天说",
+  "introduction":"每日一句，优美句子。英语天天说。",
+  "price":"4.5k"
+},
+  {
+    "img":"img/RecommendProgram/RecommendProgram_item2.png",
+    "videoHref":"javascript:;",
+    "programName":"英语天天说",
+    "introduction":"每日一句，优美句子。英语天天说。",
+    "price":"4.5k"
+  },
+  {
+    "img":"img/RecommendProgram/RecommendProgram_item3.png",
+    "videoHref":"javascript:;",
+    "programName":"英语天天说",
+    "introduction":"每日一句，优美句子。英语天天说。",
+    "price":"4.5k"
+  },{
+  "img":"img/RecommendProgram/RecommendProgram_item4.png",
+  "videoHref":"javascript:;",
+  "programName":"英语天天说",
+  "introduction":"每日一句，优美句子。英语天天说。",
+  "price":"4.5k"
+}]

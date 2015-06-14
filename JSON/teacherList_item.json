@@ -1,0 +1,35 @@
+[{
+  "img":"img/RecommendTeacher/rachel.jpg",
+  "videoHref":"javascript:;",
+  "myHomePage":"javascript:;",
+  "name":"景盼",
+  "place":"武汉-武昌区",
+  "teachingAge":"3",
+  "introduction":"将语言与生活结合，英才施教"
+},
+  {
+    "img":"img/RecommendTeacher/tiantian.jpg",
+    "videoHref":"javascript:;",
+    "myHomePage":"javascript:;",
+    "name":"于天天",
+    "place":"宁波市",
+    "teachingAge":"2",
+    "introduction":"希望大家在快乐中学习英语"
+  },
+  {
+    "img":"img/RecommendTeacher/yaoyao.jpg",
+    "videoHref":"javascript:;",
+    "myHomePage":"javascript:;",
+    "name":"姚瑶",
+    "place":"陕西-咸阳",
+    "teachingAge":"5",
+    "introduction":"发音清晰标准地道，授课思路清晰，擅长与学生互动交流"
+  },{
+  "img":"img/RecommendTeacher/qiangdiao.jpg",
+  "videoHref":"javascript:;",
+  "myHomePage":"javascript:;",
+  "name":"任铄炜",
+  "place":"上海",
+  "teachingAge":"2",
+  "introduction":"腔调控为你打磨精致发音"
+}]
